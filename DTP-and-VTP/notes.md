@@ -1,0 +1,42 @@
+- VTP (VLAN Trunk Protocol) allows you to configure VLANs on a central server switch, and other switches (clients) will synchronize their VLAN database to the server.
+- DTP (Dynamic Trunking Protocol) is a Cisco proprietary protocol that allows Cisco switches to dynamically determine their interface status (access or trunk) without manual configuration.
+- A switchport in dynamic desirable mode will actively try to form a trunk with other Cisco switches.
+- A switchport in dynamic auto mode will NOT actively try to form a trunk with other Cisco switches.
+- Cisco switches operate in VTP server mode by default.
+- Cisco switches operate in VTP version 1 by default.
+- DTP is enabled by default on all Cisco switch interfaces.
+- interfaces on newer Cisco switches default to switchport mode dynamic auto
+- Interfaces on older Cisco switches default to switchport mode dynamic desirable
+- VTP clients cannot add/modify/delete VLANs.
+- VTP clients will synchronize their VLAN database with a VTP server with a higher revision number.
+- VTP servers can add/modify/delete VLANs.
+- VTP servers will synchronize their VLAN database with a VTP server with a higher revision number.
+- VTP servers will increase the revision number every time a VLAN is added/modified/deleted.
+- VTP transparents can add/modify/delete VLANs.
+- VTP transparents won’t synchronize their VLAN database with a VTP server with a higher revision number.
+
+- Q: Does a VTP server maintain its VLAN database in NVRAM?
+- A: Yes
+- Q: Does a VTP transparent maintain its VLAN database in NVRAM?
+- A: Yes
+- Q: Does a VTPv1/v2 client maintain its VLAN database in NVRAM?
+- A: No
+- Q: Does a VTPv3 client maintain its VLAN database in NVRAM?
+- A: Yes
+- Q: Does VTPv1 support the extended VLAN range (1006-4094)?
+- A: No
+- Q: Does VTPv2 support the extended VLAN range (1006-4094)?
+- A: No
+- Q: Does VTPv3 support the extended VLAN range (1006-4094)?
+- A: Yes
+- Q: How many versions of VTP are there?
+- A: 3
+- Q: In DTP trunk encapsulation negotiation, which encapsulation type is favored?
+- A: ISL
+- Q: What are the three VTP modes?
+- 1: Server
+- 2: Client 
+- 3: Transparent
+- Q: What are the two DTP interface modes?
+- 1: switchport mode dynamic auto
+- 2: switchport mode dynamic desirable
