@@ -35,65 +35,42 @@ Ethernet was originally defined in the IEEE 802.3 standard in 1983.
 Fiber-Optic
 Fiber-Optic cables are connected to SFP (Small Form-Factor Pluggable) transceivers in a router or switch.
 
-Bits & Bytes
+## Bits & Bytes
 
-Q: How many bits are in 1 byte? 
-8
-Q: How many bits are in 1 gigabit?
-1,000,000,000 (1 billion)
-Q: How many bits are in 1 kilobit?
-1,000 (one thousand)
-Q: How many bits are in 1 megabit?
-1,000,000 (1 million)
-Q: How many bits are in 1 terabit?
-1,000,000,000,000 (1 trillion)
+| Question                             | Answer                        |
+|--------------------------------------|-------------------------------|
+| How many bits are in 1 byte?         | 8                             |
+| How many bits are in 1 kilobit?      | 1,000 (one thousand)          |
+| How many bits are in 1 megabit?      | 1,000,000 (1 million)         |
+| How many bits are in 1 gigabit?      | 1,000,000,000 (1 billion)     |
+| How many bits are in 1 terabit?      | 1,000,000,000,000 (1 trillion)|
 
-Cables and Wires: 
+## Cables and Wires: 
 
-Q: How many pairs of wires are used in a 1000BASE-T cable?
-4 (=8 wires)
-Q: How many pairs of wires are used in a 100BASE-T cable?
-2 (=4 wires)
-Q: How many pairs of wires are used in a 10BASE-T cable?
-2 (=4 wires)
-Q: How many pairs of wires are used in a 10GBASE-T cable?
-4 (=8 wires)
-Q: How many pins are in an RJ45 connector?
-8
-Q: What is the maximum length of an Ethernet UTP cable?
-100 meters
-Q: What is the name of the connector on the end of an Ethernet UTP cable?
-RJ45
-Q: What is the name of the feature that allows a device to automatically adjust which RJ45 pin pairs it uses to transmit and receive data?
-Auto MDI-X
-Q: What is the speed of a '10 Gig Ethernet' connection?
-10 Gbps
-Q: What is the speed of a 'FastEthernet' connection?
-100 Mbps
-Q: What is the speed of a 'Gigabit Ethernet' connection?
-1 Gbps
-Q: What is the speed of an 'Ethernet' connection?
-10 Mbps
-Q: What kind of cable connects a pin pair on one end of a UTP cable to the opposite pair on the other end?
-crossover cable
-Q: What kind of cable connects a pin pair on one end of a UTP cable to the same pair on the other end?
-straight-through cable
-Q: Which allows longer cables, single-mode or multimode fiber?
-Single-mode
-Q: Which four pin pairs are used in a 1000BASE-T or 10GBASE-T connection?
-Pair 1-2, Pair 3-6, Pair 4-5, pair 7-8
-Q: Which two pin pairs are used in a 10BASE-T or 100BASE-T connection?
-Pair 1-2, Pair 3-6
-Q: Which is cheaper, single-mode or multimode fiber?
-Multimode
-Q: Why are the wire pairs in a UTP cable twisted together?
-It protects against EMI (Electromagnetic Interference)
-Q: What kind of cable is used to connect to the RJ45 console port on a Cisco device?
-Rollover Cable
+| Question                                                                 | Answer                                                        |
+|--------------------------------------------------------------------------|---------------------------------------------------------------|
+| How many pairs of wires are used in a 1000BASE-T cable?                  | 4 pairs (8 wires)                                             |
+| How many pairs of wires are used in a 100BASE-T cable?                   | 2 pairs (4 wires)                                             |
+| How many pairs of wires are used in a 10BASE-T cable?                    | 2 pairs (4 wires)                                             |
+| How many pairs of wires are used in a 10GBASE-T cable?                   | 4 pairs (8 wires)                                             |
+| How many pins are in an RJ45 connector?                                  | 8                                                             |
+| What is the maximum length of an Ethernet UTP cable?                     | 100 meters                                                    |
+| What is the name of the connector on the end of an Ethernet UTP cable?   | RJ45                                                          |
+| What feature allows automatic adjustment of transmit/receive pin pairs?  | Auto MDI-X                                                    |
+| What is the speed of a '10 Gig Ethernet' connection?                     | 10 Gbps                                                       |
+| What is the speed of a 'FastEthernet' connection?                        | 100 Mbps                                                      |
+| What is the speed of a 'Gigabit Ethernet' connection?                    | 1 Gbps                                                        |
+| What is the speed of an 'Ethernet' connection?                           | 10 Mbps                                                       |
+| What kind of cable connects pin pairs to opposite pairs?                 | Crossover cable                                               |
+| What kind of cable connects pin pairs to the same pairs?                 | Straight-through cable                                        |
+| Which allows longer cables, single-mode or multimode fiber?             | Single-mode                                                   |
+| Which four pin pairs are used in 1000BASE-T or 10GBASE-T?                | Pair 1-2, Pair 3-6, Pair 4-5, Pair 7-8                         |
+| Which two pin pairs are used in 10BASE-T or 100BASE-T?                   | Pair 1-2, Pair 3-6                                            |
+| Which is cheaper, single-mode or multimode fiber?                        | Multimode                                                     |
+| Why are the wire pairs in a UTP cable twisted together?                  | To protect against EMI (Electromagnetic Interference)         |
+| What kind of cable is used to connect to the RJ45 console port?          | Rollover cable                                                |
+| What two kinds of console ports are common on Cisco devices?             | 1: USB, 2: RJ45                                               |
 
-Q: What two kinds of console ports are common on Cisco devices?
-1: USB 
-2: RJ45
 
 Standards
 
