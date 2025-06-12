@@ -16,3 +16,39 @@
 | Loopback    | ::1         | No                | Local host only                               |
 | Unspecified | ::          | No                | Seen in DHCPv6 / autoconfig states            |
 | ULA         | FD00::/8    | Yes (internal only) | Like 10.0.0.0/8 for IPv6                      |
+
+# IPv4 Multicast Addresses
+
+| Address       | Description             |
+|---------------|-------------------------|
+| 224.0.0.1     | All Nodes               |
+| 224.0.0.2     | All Routers             |
+| 224.0.0.5     | All OSPF routers        |
+| 224.0.0.6     | All OSPF DRs/BDRs       |
+| 224.0.0.9     | All RIP routers         |
+| 224.0.0.10    | All EIGRP routers       |
+
+# IPv6 Multicast Addresses
+
+| Address     | Description             |
+|-------------|-------------------------|
+| FF02::1     | All nodes               |
+| FF02::2     | All routers             |
+| FF02::5     | All OSPF routers        |
+| FF02::6     | All OSPF DRs/BDRs       |
+| FF02::9     | All RIP routers         |
+| FF02::A     | All EIGRP routers       |
+| FF01        | Interface-local         |
+| FF02        | Link-local              |
+| FF05        | Site-local              |
+| FF08        | Organization-local      |
+| FF0E        | Global                  |
+
+# NDP (Neighbor Discovery Protocol) Message Types
+
+| Message | ICMPv6 Type |
+|---------|-------------|
+| NDP RS  | ICMPv6 Type 133 |
+| NDP RA  | ICMPv6 Type 134 |
+| NDP NS  | ICMPv6 Type 135 |
+| NDP NA  | ICMPv6 Type 136 |
