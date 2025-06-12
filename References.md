@@ -1,5 +1,5 @@
 ## CCNA Blog:
-- A super helpful blog that covers the major exam topics, breaks things down into laymans terms and beginner friendly 
+A super helpful blog that covers the major exam topics, breaks things down into laymans terms and beginner friendly 
 https://www.ccnablog.com/stp-part-i/ 
 
 ## Professor Messer
