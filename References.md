@@ -3,7 +3,7 @@ A super helpful blog that covers the major exam topics, breaks things down into 
 https://www.ccnablog.com/stp-part-i/ 
 
 ## Professor Messer
-Always good to refresh on the fundamentals, for those intimidated by CCNA's depth, Net+ provides foundational context
+Always good to refresh on the fundamentals, for those intimidated by CCNA's depth, his Net+ playlist provides foundational context
 https://www.youtube.com/@professormesser
 
 ## Jeremy's IT lab
