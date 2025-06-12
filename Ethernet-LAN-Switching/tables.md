@@ -46,3 +46,12 @@
 | D           | 13      |
 | E           | 14      |
 | F           | 15      |
+
+| EtherType (Hex) | Decimal | Protocol                        | Description                           |
+|------------------|---------|----------------------------------|---------------------------------------|
+| 0x0800           | 2048    | IPv4                             | Internet Protocol version 4           |
+| 0x0806           | 2054    | ARP                              | Address Resolution Protocol           |
+| 0x86DD           | 34525   | IPv6                             | Internet Protocol version 6           |
+| 0x8100           | 33024   | 802.1Q VLAN tag                  | VLAN-tagged frame                     |
+| 0x8847           | —       | MPLS unicast                     | MPLS (Multiprotocol Label Switching)  |
+| 0x88CC           | —       | LLDP                             | Link Layer Discovery Protocol         |
