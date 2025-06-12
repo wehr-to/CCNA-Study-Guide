@@ -9,7 +9,7 @@
 - “EtherChannel groups links together so STP sees them as one. PAgP is Cisco-only. Desirable + auto works, auto + auto doesn’t.
 
 
-  | Configuration Pair         | Result                                 |
+| Configuration Pair        | Result                                |
 |---------------------------|----------------------------------------|
 | Auto + Auto               | No EtherChannel (both wait)            |
 | Auto + Desirable          | EtherChannel established               |
