@@ -53,11 +53,4 @@
 - Q: Which DHCP message is unicast only and sent by the client to end the lease?
 - A: Release
 
-Diagram: 
-Client                          Network                        Server
-  |                                |                              |
-  |--------[Discover - Broadcast]------------------------------->|
-  |<--------[Offer - Uni/Broadcast]------------------------------|
-  |--------[Request - Broadcast]------------------------------->|
-  |<--------[ACK - Uni/Broadcast]-------------------------------|
-  |--------[Release - Unicast]--------------------------------->|
+
