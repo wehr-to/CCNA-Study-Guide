@@ -1,6 +1,6 @@
 # OSPF
 
-# 🧠 OSPF Key Concepts
+# OSPF Key Concepts
 
 ## General Concepts
 - An autonomous system boundary router (ASBR) is an OSPF router that connects the OSPF network to an external network.
