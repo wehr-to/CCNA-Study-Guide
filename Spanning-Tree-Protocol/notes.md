@@ -93,4 +93,46 @@
 ## STP Optional Features
 
 - **Root Guard**: Prevents a newly connected switch from becoming the root bridge  
-- **Loop Guard**: Shuts down an interface if it stops receiving BPDUs  
+- **Loop Guard**: Shuts down an interface if it stops receiving BPDUs
+
+## Exam Tips
+
+## STP Port Role Selection Logic
+
+### Root Port Selection (Per Switch)
+- Choose the port with the **lowest root cost** (based on interface speed).
+- If tied, choose the **lowest neighbor bridge ID** (priority + MAC).
+- If still tied, choose the **lowest neighbor port ID** (interface number).
+- There is **only one Root Port per switch** (except the root bridge itself, which has none).
+
+### Default Behavior
+- **Stable states** = Blocking, Forwarding
+
+---
+
+## Trick Distractors / FALSE Statements
+- ✘ Interfaces in **learning** state forward traffic  
+- ✘ **Blocking** ports don’t receive BPDUs  
+- ✘ MACs are learned during **listening**
+
+---
+
+## Visualization & Exam Tips
+- Visualize the flow: **Who is the root? Where’s the root port? Where must blocking occur?**
+- Memorize state behaviors:
+  - **Listening** = just BPDU logic
+  - **Learning** = MAC table building
+  - **Forwarding** = game on
+- Focus on root port selection logic:  
+  → **cost → bridge ID → port ID**
+- Use lab simulations (like Packet Tracer) to **watch convergence happen**
+- Look for "gotcha" wording on exams:  
+  → e.g., “**sends BPDUs**” vs “**receives BPDUs**”
+
+---
+
+## Mnemonics
+- **“B-L-L-F”** = STP Port States → Blocking, Listening, Learning, Forwarding  
+- **“Auto Root”** = Every switch thinks it’s root until proven otherwise  
+- **“PortFast = Fast to Forward”** = No learning/listening delay  
+
