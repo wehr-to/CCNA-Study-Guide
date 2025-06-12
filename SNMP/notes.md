@@ -1,0 +1,48 @@
+- SNMP Agents use UDP port 161.
+- SNMP Managers use UDP port 162.
+
+- Each variable in the SNMP MIB is identified with an OID
+- The Management Information Base (MIB) is the structure that contains the variables that are managed by SNMP.
+- The SNMP Agent is software on the managed devices
+-The SNMP Manager is software on the NMS
+
+- Q: What are the two types of devices in SNMP?
+- 1: Managed Devices 
+- 2: Network Management Station (NMS)
+- Q: What does MIB stand for?
+- Management Information Base
+- Q: What does NMS stand for?
+- Network Management Station
+- Q: What does OID stand for?
+- Object ID
+- Q: What does SNMP stand for?
+- Simple network management protocol 
+- Q: What is the most commonly used version of SNMPv2?
+- SNMPv2c
+- Q: Which SNMP message is a more efficient version of the GetNext message?
+- GetBulk
+- Q: Which SNMP message is a request sent from the manager to the agent to change the value of one or more variables?
+- Set
+- Q: Which SNMP message is a request sent from the manager to the agent to discover the available variables in the MIB?
+- GetNext
+- (also GetBulk, which is a more efficient version)
+- Q: Which SNMP message is a request sent from the manager to the agent to retrieve the value of a variable (OID), or multiple variables?
+- Get
+- Q: Which SNMP message is an acknowleged notification sent from the agent to the manager?
+- Inform
+- Q: Which SNMP message is an unacknowleged notification sent from the agent to the manager?
+- Trap
+
+- Q: Which SNMP message(s) is/are in the 'notification' message class?
+- 1: Trap 
+- 2: Inform
+- Q: Which SNMP message(s) is/are in the 'read' message class?
+- 1: Get
+- 2: GetNext
+- 3: GetBulk
+- Q: Which SNMP message(s) is/are in the 'response' message class?
+- Response
+- Q: Which SNMP message(s) is/are in the 'write' message class?
+- Set
+- Q: Which version of SNMP is most secure?
+- SNMPv3
