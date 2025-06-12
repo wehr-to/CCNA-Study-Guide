@@ -5,19 +5,16 @@
 | Force without protocol      | None     | mode on (dangerous, no negotiation) |
 
 - PAgP (Port Aggregation Protocol) is a Cisco proprietary protocol used to automatically bundle multiple physical links between switches into a single logical link, called an EtherChannel.
-- 
 - “EtherChannel groups links together so STP sees them as one. PAgP is Cisco-only. Desirable + auto works, auto + auto doesn’t.
 
-
-| Configuration Pair        | Result                                |
+| Configuration Pair         | Result                                |
 |---------------------------|----------------------------------------|
 | Auto + Auto               | No EtherChannel (both wait)            |
 | Auto + Desirable          | EtherChannel established               |
 | Desirable + Desirable     | EtherChannel established               |
 | On + anything else        | No EtherChannel unless both are "on"   |
 
-
-| Feature       | PAgP              | LACP                  |
+| Feature       | PAgP              | LACP                   |
 |---------------|-------------------|------------------------|
 | Vendor        | Cisco Proprietary | IEEE Standard (802.3ad)|
 | Modes         | Auto, Desirable   | Passive, Active        |
@@ -27,7 +24,6 @@ You’d use mode desirable when:
 - You’re in a Cisco-only environment.
 - You want PAgP-based EtherChannel.
 - You’re okay with Cisco proprietary protocols.
-
 
 | Configuration            | Protocol | Outcome                               |
 |--------------------------|----------|----------------------------------------|
