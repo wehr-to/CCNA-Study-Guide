@@ -1,0 +1,22 @@
+- NPE (No Payload Encryption) IOS images do not support cryptographic features like SSH.
+- K9 IOS images support SSH.
+- A device that supports both SSHv1 and SSHv2 is said to run version 1.99
+- SSH servers listen for traffic on TCP port 22.
+- Telnet servers listen for traffic on TCP port 23.
+
+- Q: By default, is a password required to access the CLI via the console port?
+- No
+- Q: Does SSH encrypt traffic?
+- Yes
+- Q: Does Telnet encrypt data?
+- No
+- Q: What does FQDN stand for?
+- Fully Qualified Domain Name
+- Q: What does SSH stand for?
+- Secure Shell
+- Q: What does Telnet stand for?
+- Teletype Network
+- Q: What makes up the FQDN of a device?
+- Hostname.domainname
+- Q: When crypto key generate rsa is used, how are the keys named?
+- The FQDN is used as the name
