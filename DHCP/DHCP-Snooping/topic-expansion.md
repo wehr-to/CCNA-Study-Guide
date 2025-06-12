@@ -42,6 +42,7 @@ Contents:
 
 ## DHCP Snooping + Rate Limiting
 - Rate limiting protects against DHCP starvation or flood attacks.
+
 | Feature                     | Behavior                                                        |
 | --------------------------- | --------------------------------------------------------------- |
 | Command                     | `ip dhcp snooping limit rate <pps>`                             |
