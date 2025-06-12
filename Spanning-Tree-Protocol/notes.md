@@ -111,9 +111,9 @@
 ---
 
 ## Trick Distractors / FALSE Statements
-- ✘ Interfaces in **learning** state forward traffic  
-- ✘ **Blocking** ports don’t receive BPDUs  
-- ✘ MACs are learned during **listening**
+- Interfaces in **learning** state forward traffic  
+- **Blocking** ports don’t receive BPDUs  
+- MACs are learned during **listening**
 
 ---
 
