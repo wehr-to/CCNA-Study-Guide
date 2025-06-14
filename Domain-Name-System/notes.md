@@ -1,0 +1,5 @@
+- TCP is used for DNS messages greater than 512 bytes.
+- DNS 'A' records map names to IPv4 addresses.
+- DNS 'AAAA' records map names to IPv6 addresses.
+- Hosts can automatically learn the address of the DNS server via DHCP
+- Standard DNS queries/responses typically use UDP
