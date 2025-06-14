@@ -46,3 +46,24 @@
 
 **Q:** What is the default stratum for `ntp master`?  
 **A:** 8
+
+# What Does `ntp master` Actually Do?
+
+The `ntp master` command tells the router to act as an authoritative NTP server for other devices on the network.
+
+If no external NTP server is configured, the router will use its own system clock as the time source.
+
+The `ntp master` command sets the stratum level (default: 8, unless you specify otherwise with a command like `ntp master 4`).
+
+Think of it like:
+> “I’m not synced to anyone else, but I’ll pretend I am and let others sync to me.”
+
+---
+
+## NTP Stratum Levels
+
+| Stratum | Meaning                                 |
+|---------|------------------------------------------|
+| 1       | Synced to atomic clock or GPS (best)     |
+| 2–15    | Synced to another NTP device             |
+| 16      | Unsynchronized (invalid)                 |
