@@ -17,8 +17,8 @@ A really comprehensive video series full of labs and in depth explanations, you 
 https://www.youtube.com/@JeremysITLab
 
 ## Practice exams
-I personally chose boson, the questions they provide generally tend to be harder than the real exam itself, but behind a pricier paywall
-https://boson.com/
+I personally chose boson, the questions they provide generally tend to be harder than the real exam itself, but behind a pricier paywall (i used code "BosonMichael" for 15% off!) 
+https://boson.com/ 
 
 ## Practice labs 
 I used packet tracer and have found it helpful learning networking, very good way to get CLI practice
