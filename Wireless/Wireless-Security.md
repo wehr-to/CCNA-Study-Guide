@@ -1,5 +1,17 @@
 ## Wireless security
 
+### Boson/Exam Angles
+- “Which device requires a certificate in PEAP?”
+Authentication Server (only)
+- “Which encryption uses RC4?”
+WEP
+- “Which WPA version uses Simultaneous Authentication of Equals (SAE)?”
+WPA3
+- “What’s the difference between CCMP and GCMP?”
+Encryption and MIC mode
+- Trick choice:
+"WPA2 uses TKIP " ← only in WPA1 or transitional mode.
+
 ### General Facts
 - A Group Key is used by a wireless AP to encrypt traffic that it wants to send to all of its clients.
 - EAP is integrated with 802.1X, which provides port-based network access control.
