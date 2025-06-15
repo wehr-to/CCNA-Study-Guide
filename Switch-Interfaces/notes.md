@@ -15,3 +15,10 @@
 | Router           | `administratively down/down` (requires `no shutdown`)              |
 | Switch           | `up/up` if connected to another powered-on device                  |
 |                  | `down/down` if not connected or device is off                      |
+
+## Duplex Modes Comparison
+
+| **Mode**       | **Can Send & Receive Simultaneously?** | **Used With**         | **Notes**                                  |
+|----------------|-----------------------------------------|------------------------|---------------------------------------------|
+| Half Duplex    |  No — one direction at a time         | Hubs or legacy links   | Uses CSMA/CD to manage collisions           |
+| Full Duplex    |  Yes — both directions at once        | Switches               | No collisions can happen                    |
