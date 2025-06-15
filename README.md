@@ -23,3 +23,9 @@ https://boson.com/
 ## Practice labs 
 I used packet tracer and have found it helpful learning networking, very good way to get CLI practice
 https://www.netacad.com/cisco-packet-tracer
+
+## Cisco Whitepapers
+https://www.cisco.com/c/en/us/solutions/data-center-virtualization/desktop-virtualization/white-paper-listing.html
+
+## Testing/Study Strategies: 
+https://github.com/wehr-to/CCNA-Study-Guide/tree/main/testing-strategies
