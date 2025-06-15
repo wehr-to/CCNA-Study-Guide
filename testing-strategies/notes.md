@@ -3,7 +3,7 @@
 ## Core Study Flow
 
 1. **Transfer notecards to Google Docs**
-   - Consolidate scattered notes into a single reference document
+   - Consolidate scattered notes into a single reference document (Jeremy's Anki Flashcards)
 
 2. **Watch all Professor Messer Net+ videos**
    - Solidify foundational knowledge
