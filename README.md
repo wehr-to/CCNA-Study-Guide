@@ -25,7 +25,9 @@ I used packet tracer and have found it helpful learning networking, very good wa
 https://www.netacad.com/cisco-packet-tracer
 
 ## Cisco Whitepapers
-https://www.cisco.com/c/en/us/solutions/data-center-virtualization/desktop-virtualization/white-paper-listing.html
+Reddit thread with CCNP whitepapers, goes beyond CCNA material, very helpful
+https://www.reddit.com/r/ccnp/comments/kpeefz/cisco_white_papers_i_used/
 
 ## Testing/Study Strategies: 
+My personal study method, including topic expansion prompts, mnemonics, and study flows
 https://github.com/wehr-to/CCNA-Study-Guide/tree/main/testing-strategies
