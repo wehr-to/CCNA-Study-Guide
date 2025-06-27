@@ -51,3 +51,14 @@ A: LLDP
 
 **Q: Which Layer 2 discovery protocol is Cisco proprietary?**  
 A: CDP
+
+---
+
+## CDP/LLDP are trying to discover:
+
+- Who is my neighbor? (device ID)
+- Where am I connected? (port ID)
+- What are they? (capabilities)
+- How are we connected? (VLAN, duplex, speed)
+- How can I reach them? (management IP)
+- They do not discover distant devices across the network (non-adjacent), nor do they map routing information or spanning-tree states. Their goal is local neighbor discovery for physical and logical topology mapping to simplify inventory, troubleshooting, and automation in your environment.
