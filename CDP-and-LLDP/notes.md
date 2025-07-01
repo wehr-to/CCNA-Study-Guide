@@ -62,3 +62,17 @@ A: CDP
 - How are we connected? (VLAN, duplex, speed)
 - How can I reach them? (management IP)
 - They do not discover distant devices across the network (non-adjacent), nor do they map routing information or spanning-tree states. Their goal is local neighbor discovery for physical and logical topology mapping to simplify inventory, troubleshooting, and automation in your environment.
+
+# CDP and LLDP Discovery Table
+
+| **What They Discover**         | **Details**                                                                 |
+|--------------------------------|------------------------------------------------------------------------------|
+| **Neighbor Device Identity**   | Device ID: hostname, MAC address, chassis ID (who is on the other end)      |
+| **Port Identity**              | Local port and remote port (where you are connected)                        |
+| **Device Capabilities**        | Type of device (switch, router, phone, AP, etc.)                            |
+| **VLAN and Network Info**      | VLAN ID (Native VLAN on trunks), duplex, and speed                          |
+| **Power Requirements**         | PoE details if the device supports/needs power over Ethernet                |
+| **IP Address of Neighbor**     | Management IP for reachability and troubleshooting                          |
+| **Scope**                      | Only discovers **directly connected Layer 2 neighbors** (not Layer 3 routes)|
+
+
