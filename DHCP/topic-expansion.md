@@ -31,26 +31,28 @@
 | `ipconfig /release` | Sends a **DHCP Release** message (unicast) to the DHCP server |
 | `ipconfig /renew`   | Sends a new **DHCP Discover** to request a new IP             |
 
-- Q&A Review
-- Q: What does DHCP stand for?
+# Q&A Review
+
+## Q: What does DHCP stand for?
 - A: Dynamic Host Configuration Protocol
 
-- Q: What are the 4 DORA messages for getting an IP address?
+## Q: What are the 4 DORA messages for getting an IP address?
 - A: Discover → Offer → Request → Ack
 
-- Q: Which DORA messages are sent by the client?
+## Q: Which DORA messages are sent by the client?
 - A: Discover, Request
 
-- Q: Which DORA messages are sent by the server?
+## Q: Which DORA messages are sent by the server?
 - A: Offer, Ack
 
-- Q: Which DHCP messages are always broadcast?
+## Q: Which DHCP messages are always broadcast?
 - A: Discover, Request
 
-- Q: Which DHCP messages are unicast or broadcast depending on context?
+## Q: Which DHCP messages are unicast or broadcast depending on context?
 - A: Offer, Ack
 
-- Q: Which DHCP message is unicast only and sent by the client to end the lease?
+## Q: Which DHCP message is unicast only and sent by the client to end the lease?
 - A: Release
+
 
 
