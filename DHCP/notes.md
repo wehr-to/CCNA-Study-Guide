@@ -9,8 +9,6 @@
 - The DHCP Request message is broadcast
 - Using the command ipconfig /release in the Windows command prompt will send a DHCP Release message.
 
----
-
 ## Q: In the DHCP 'DORA' exchange, which messages are sent from client to server?
 - 1: Discover
 - 2: Request
@@ -27,8 +25,6 @@
 
 ## Q: Which messages in the DHCP 'DORA' exchange can be broadcast or unicast?
 - Offer, Ack
-
----
 
 ## What four DHCP messages are exchanged for a DHCP client to get an IP address?
 - 1: Discover
