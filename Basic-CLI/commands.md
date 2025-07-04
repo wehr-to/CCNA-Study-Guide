@@ -12,7 +12,7 @@
 | View the running configuration                                    | `show running-config`                                |
 | View the startup configuration                                    | `show startup-config`                                |
 | Use the keyword to remove a configured command                    | `no` (e.g., `no service password-encryption`)        |
-
+| encrypt password that is required to access privilege level 7 on a router | `enable secret level 7` |
 ---
 
 ## Default Cisco Console Port Settings
