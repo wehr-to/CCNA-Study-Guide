@@ -39,4 +39,9 @@
 - **Q:** When `crypto key generate rsa` is used, how are the keys named?  
   **A:** The FQDN is used as the name.
 
+## Enable SSH on VTY line
 
+- Step 1: Hostname
+- Step 2: IP domain-name
+- Step 3: Crypto key generate RSA
+- Step 4: Transport input SSH
