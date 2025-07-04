@@ -40,3 +40,6 @@
 
 **Q:** What is the default port security violation mode?  
 **A:** Shutdown
+
+## References: 
+- https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960/software/release/12-2_55_se/configuration/guide/scg_2960/swtrafc.html#86378
