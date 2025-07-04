@@ -11,8 +11,6 @@
 - **The implicit deny** means that **any packet not explicitly permitted is dropped**.
 - When a packet **matches an ACE**, the router **ignores the rest** of the ACL.
 
----
-
 ### Standard vs. Extended ACLs
 
 | Type         | Matching Criteria                           | Placement Recommendation                    |
@@ -20,16 +18,12 @@
 | **Standard** | Source IP address only                      | As close to the **destination** as possible |
 | **Extended** | Source & destination IP + L4 port (TCP/UDP) | As close to the **source** as possible      |
 
----
-
 ### Number Ranges
 
 | ACL Type          | Number Range     |
 |-------------------|------------------|
 | Standard Numbered | 1–99, 1300–1999  |
 | Extended Numbered | 100–199, 2000–2699 |
-
----
 
 ### Common Questions
 
@@ -44,4 +38,7 @@
 
 - **Q: What happens after a packet matches an ACE?**  
   A: All remaining ACEs are ignored.
+
+## References 
+- https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html
 
