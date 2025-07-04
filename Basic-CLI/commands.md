@@ -43,3 +43,6 @@
 |-----------------------------------------------------|-----------|
 | `enable secret` uses type [...] encryption (MD5)    | `5`       |
 ****
+
+## References
+- https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_usr_cfg/configuration/15-sy/sec-usr-cfg-15-sy-book/sec-cfg-sec-4cli.html#GUID-3731A307-367C-42A3-ACA3-09D69B3BA120
