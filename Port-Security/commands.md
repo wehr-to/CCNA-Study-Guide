@@ -16,3 +16,4 @@
 | Show all port-security-enabled ports | Exec | `show port-security` |
 | Show secure MAC addresses | Exec | `show mac address-table secure` |
 | Show port security info for a specific interface | Exec | `show port-security interface interface` |
+| No more than two devices can send traffic into a port | `switchport port-security maximum 2` |
