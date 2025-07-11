@@ -1,15 +1,20 @@
 - Q: What does Cisco ACI stand for?
-- Application-Centric Infrastructure
+  - Application-Centric Infrastructure
+
 - Q: What does Cisco DNA stand for?
-- Digital Network Architecture
+  - Digital Network Architecture
+
 - Q: What does CTS stand for?
-- Cisco TrustSec
+  - Cisco TrustSec
+
 - Q: What does IBN stand for?
-- Intent-Based Networking
+  - Intent-Based Networking
+
 - Q: What does LISP stand for?
-- Locator ID Separation Protocol
+  - Locator ID Separation Protocol
+
 - Q: What does VXLAN stand for?
-- Virtual Extensible LAN
+  - Virtual Extensible LAN
 
 - SD-Access is Cisco's SDN solution for automating campus LANs.
 - ACI is Cisco's SDN solution for automating data center networks.
@@ -31,3 +36,4 @@ Q: What are the three switch types in Cisco SD-Access?
 - Edge Node
 - Border Node
 - Control Node
+
