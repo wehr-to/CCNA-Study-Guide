@@ -18,4 +18,5 @@
 | Cisco IOS | Enable the router to act as a DNS server | `ip dns server` |
 | Cisco IOS | Display the host table | `show hosts` |
 | Cisco IOS | Enable DNS lookup on the router | `ip domain lookup` *(or older: `ip domain-lookup`)* |
+| Cisco IOS | `dns-server 10.1.1.1` | Configure DHCP Clients to use server 10.1.1.1 for name resolution |
 
