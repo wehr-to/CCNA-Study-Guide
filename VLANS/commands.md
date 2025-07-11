@@ -16,4 +16,4 @@
 | Configure the native VLAN on a router subinterface         | R1(config-subif)#    | `encapsulation dot1q vlan-id native`                       |
 | Enable Layer 3 routing on a multilayer switch              | SW1(config)#         | `ip routing`                                                |
 | Reset an interface to its default configuration            | R1(config)#          | `default interface interface`                               |
-| Configure voice traffic and data traffic are separated but dont require unique voice VLAN | `switchport voice vlan 10 |
+| Configure voice traffic and data traffic are separated but dont require unique voice VLAN | `switchport voice vlan 10`                           |
