@@ -87,3 +87,12 @@ Machine Learning
 **Q: What does RRM stand for?**  
 Radio Resource Management
 
+## HTTP Methods
+```
+GET - Retrieves data from object
+PUT - Adds information to an object
+POST - Creates an object
+DELETE - Removes an object
+PATCH - Applies partial modifications to an object
+```
+
