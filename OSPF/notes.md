@@ -18,6 +18,7 @@
 - The Shortest Path First algorithm is also known as Dijkstra's algorithm.
 - The default OSPF reference bandwidth is 100 Mbps.
 - Formula to calculate cost: `reference bandwidth / interface bandwidth = cost`
+- Router IDs must not be unique
 
 ## Network Types & Timers
 
