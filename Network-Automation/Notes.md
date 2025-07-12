@@ -89,10 +89,10 @@ Radio Resource Management
 
 ## HTTP Methods
 ```
-GET - Retrieves data from object
-PUT - Adds information to an object
-POST - Creates an object
-DELETE - Removes an object
-PATCH - Applies partial modifications to an object
+GET - Retrieves data from object / Read
+PUT - Adds information to an object / Update
+POST - Creates an object / Create
+DELETE - Removes an object / Delete
+PATCH - Applies partial modifications to an object / Update
 ```
 
