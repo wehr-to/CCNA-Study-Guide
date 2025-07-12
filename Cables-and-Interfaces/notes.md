@@ -1,113 +1,140 @@
-1000BASE-LX maximum cable length:
-550 meters (multimode)
-5 kilometers (single-mode)
-1000BASE-LX was defined in the IEEE 802.3z standard.
+# Network Media and Cabling Notes (CCNA)
 
-10GBASE-ER maximum cable length:
-30 kilometers
+## Fiber Ethernet Standards and Maximum Cable Lengths
 
-10GBASE-LR maximum cable length:
-10 kilometers
+### 1000BASE-LX (IEEE 802.3z)
 
-10GBASE-SR maximum cable length:
-400 meters
-10GBASE-SR, 10GBASE-LR, and 10GBASE-ER were defined in the IEEE 802.3ae standard.
+* **Multimode:** 550 meters
+* **Single-mode:** 5 kilometers
 
-To Recap: 
-1000BASE-LX was defined in the IEEE 802.3z standard.
-10GBASE-SR, 10GBASE-LR, and 10GBASE-ER were defined in the IEEE 802.3ae standard.
+### 10GBASE-ER (IEEE 802.3ae)
 
-Cable Types
+* **Single-mode:** 30 kilometers
 
-UTP CABLES: 
-UTP (Unshielded Twisted Pair) cables are vulnerable to EMI (electromagnetic interference).
-UTP (Unshielded Twisted Pair) cables emit a faint signal outside of the cable, which can be detected and copied. (Security Risk)
+### 10GBASE-LR (IEEE 802.3ae)
 
-MultiMode 
-MultiMode fiber cables allow multiple angles (modes) of light waves to enter the fiberglass core.
+* **Single-mode:** 10 kilometers
 
-Full-Duplex
-A Full-Duplex connection allows both devices to send and receive data at the same time.
+### 10GBASE-SR (IEEE 802.3ae)
 
-Ethernet
-Ethernet was originally defined in the IEEE 802.3 standard in 1983.
+* **Multimode:** 400 meters
 
-Fiber-Optic
-Fiber-Optic cables are connected to SFP (Small Form-Factor Pluggable) transceivers in a router or switch.
+### Recap:
+
+* `1000BASE-LX` → IEEE 802.3z
+* `10GBASE-SR`, `10GBASE-LR`, `10GBASE-ER` → IEEE 802.3ae
+
+## Cable Types
+
+### UTP (Unshielded Twisted Pair)
+
+* Vulnerable to electromagnetic interference (EMI)
+* Emits faint signals that can be intercepted (security risk)
+
+### Multimode Fiber
+
+* Allows multiple angles (modes) of light to enter the fiber core
+* Wider core than single-mode
+
+### Single-mode Fiber
+
+* Light travels straight through at a single angle
+* Supports longer distances than multimode
+
+### Fiber-Optic
+
+* Fiber cables are connected to SFP transceivers in routers/switches
+
+### Ethernet Definition
+
+* Defined in IEEE 802.3 (1983)
+
+### Full-Duplex
+
+* Allows simultaneous send and receive on both devices
 
 ## Bits & Bytes
 
-| Question                             | Answer                        |
-|--------------------------------------|-------------------------------|
-| How many bits are in 1 byte?         | 8                             |
-| How many bits are in 1 kilobit?      | 1,000 (one thousand)          |
-| How many bits are in 1 megabit?      | 1,000,000 (1 million)         |
-| How many bits are in 1 gigabit?      | 1,000,000,000 (1 billion)     |
-| How many bits are in 1 terabit?      | 1,000,000,000,000 (1 trillion)|
+| Question                     | Answer            |
+| ---------------------------- | ----------------- |
+| How many bits are in 1 byte? | 8                 |
+| How many bits in 1 kilobit?  | 1,000             |
+| How many bits in 1 megabit?  | 1,000,000         |
+| How many bits in 1 gigabit?  | 1,000,000,000     |
+| How many bits in 1 terabit?  | 1,000,000,000,000 |
 
-## Cables and Wires: 
+## Cables and Wires
 
-| Question                                                                 | Answer                                                        |
-|--------------------------------------------------------------------------|---------------------------------------------------------------|
-| How many pairs of wires are used in a 1000BASE-T cable?                  | 4 pairs (8 wires)                                             |
-| How many pairs of wires are used in a 100BASE-T cable?                   | 2 pairs (4 wires)                                             |
-| How many pairs of wires are used in a 10BASE-T cable?                    | 2 pairs (4 wires)                                             |
-| How many pairs of wires are used in a 10GBASE-T cable?                   | 4 pairs (8 wires)                                             |
-| How many pins are in an RJ45 connector?                                  | 8                                                             |
-| What is the maximum length of an Ethernet UTP cable?                     | 100 meters                                                    |
-| What is the name of the connector on the end of an Ethernet UTP cable?   | RJ45                                                          |
-| What feature allows automatic adjustment of transmit/receive pin pairs?  | Auto MDI-X                                                    |
-| What is the speed of a '10 Gig Ethernet' connection?                     | 10 Gbps                                                       |
-| What is the speed of a 'FastEthernet' connection?                        | 100 Mbps                                                      |
-| What is the speed of a 'Gigabit Ethernet' connection?                    | 1 Gbps                                                        |
-| What is the speed of an 'Ethernet' connection?                           | 10 Mbps                                                       |
-| What kind of cable connects pin pairs to opposite pairs?                 | Crossover cable                                               |
-| What kind of cable connects pin pairs to the same pairs?                 | Straight-through cable                                        |
-| Which allows longer cables, single-mode or multimode fiber?             | Single-mode                                                   |
-| Which four pin pairs are used in 1000BASE-T or 10GBASE-T?                | Pair 1-2, Pair 3-6, Pair 4-5, Pair 7-8                         |
-| Which two pin pairs are used in 10BASE-T or 100BASE-T?                   | Pair 1-2, Pair 3-6                                            |
-| Which is cheaper, single-mode or multimode fiber?                        | Multimode                                                     |
-| Why are the wire pairs in a UTP cable twisted together?                  | To protect against EMI (Electromagnetic Interference)         |
-| What kind of cable is used to connect to the RJ45 console port?          | Rollover cable                                                |
-| What two kinds of console ports are common on Cisco devices?             | 1: USB, 2: RJ45                                               |
+| Question                                      | Answer                   |
+| --------------------------------------------- | ------------------------ |
+| How many pairs in 1000BASE-T?                 | 4 pairs (8 wires)        |
+| How many pairs in 100BASE-T?                  | 2 pairs (4 wires)        |
+| How many pairs in 10BASE-T?                   | 2 pairs (4 wires)        |
+| How many pairs in 10GBASE-T?                  | 4 pairs (8 wires)        |
+| How many pins in RJ45 connector?              | 8                        |
+| Maximum Ethernet UTP cable length?            | 100 meters               |
+| Ethernet UTP connector type?                  | RJ45                     |
+| Feature for automatic pin adjustment?         | Auto MDI-X               |
+| Speed of 10G Ethernet?                        | 10 Gbps                  |
+| Speed of Fast Ethernet?                       | 100 Mbps                 |
+| Speed of Gigabit Ethernet?                    | 1 Gbps                   |
+| Speed of standard Ethernet?                   | 10 Mbps                  |
+| Cable for opposite pin pairs?                 | Crossover cable          |
+| Cable for same pin pairs?                     | Straight-through cable   |
+| Longer fiber cable: single-mode or multimode? | Single-mode              |
+| Pin pairs in 1000BASE-T / 10GBASE-T?          | Pairs 1-2, 3-6, 4-5, 7-8 |
+| Pin pairs in 10BASE-T / 100BASE-T?            | Pairs 1-2, 3-6           |
+| Cheaper fiber type?                           | Multimode                |
+| Why are UTP pairs twisted?                    | To reduce EMI            |
+| Cable used for console (RJ45) port?           | Rollover cable           |
+| Two types of console ports on Cisco devices?  | USB and RJ45             |
 
+## IEEE Ethernet Standards
 
-Standards
+| Standard | Speed / Type         |
+| -------- | -------------------- |
+| 802.3i   | 10 Mbps (10BASE-T)   |
+| 802.3u   | 100 Mbps (100BASE-T) |
+| 802.3ab  | 1 Gbps (1000BASE-T)  |
+| 802.3an  | 10 Gbps (10GBASE-T)  |
 
-IEEE standard 802.3ab = 1 Gbps Ethernet (1000BASE-T)
-IEEE standard 802.3an = 10 Gbps Ethernet (10GBASE-T)
-IEEE standard 802.3i = 10 Mbps Ethernet (10BASE-T)
-IEEE standard 802.3u = 100 Mbps Ethernet (100BASE-T)
+## Cabling Q\&A (Auto MDI-X Disabled)
 
-Cabling Questions: 
+| Scenario        | Cable Type       |
+| --------------- | ---------------- |
+| PC ↔ Switch     | Straight-through |
+| Router ↔ Switch | Straight-through |
+| Router ↔ Router | Crossover        |
+| Switch ↔ Switch | Crossover        |
 
-Q: If Auto MDI-X is disabled, what kind of UTP cable should be used to connect a PC and a switch?
-straight-through cable
-Q: If Auto MDI-X is disabled, what kind of UTP cable should be used to connect a router and a switch?
-straight-through cable
-Q: If Auto MDI-X is disabled, what kind of UTP cable should be used to connect two routers together?
-crossover cable
-Q: If Auto MDI-X is disabled, what kind of UTP cable should be used to connect two switches together?
-crossover cable
+## Fiber Types Summary
 
-In single-mode fiber cables, light travels straight through the fiberglass core at a single angle.
-Multimode Fiber cables have a wider fiberglass core than single-mode fiber cables.
-Network speeds are measured bits in per second.
+* **Single-mode:** Light travels straight through, supports longer distance
+* **Multimode:** Wider core, light enters at multiple angles, cheaper
+* **Speeds measured in bits per second (bps)**
 
-Q: What are the two main kinds of fiber-optic cable?
-Single-mode and multimode
+**Q: What are the two main kinds of fiber-optic cable?**
+A: Single-mode and Multimode
 
-Fast Ethernet Connection Table
+## Fast Ethernet Pin Usage by Device
 
-Firewall
-In a FastEthernet connection, a firewall receives data on which pins 3 and 6
-In a FastEthernet connection, a firewall transmits data on which pins 1 and 2
-PC
-In a FastEthernet connection, a PC receives data on which pins 3 and 6
-In a FastEthernet connection, a PC transmits data on which pins 1 and 2
-Router
-In a FastEthernet connection, a router receives data on which pins 3 and 6
-In a FastEthernet connection, a router transmits data on which pins 1 and 2
-Switch
-In a FastEthernet connection, a switch receives data on which pins 1 and 2
-In a FastEthernet connection, a switch transmits data on which pins 3 and 6
+### PC
+
+* Receives: Pins 3, 6
+* Transmits: Pins 1, 2
+
+### Router
+
+* Receives: Pins 3, 6
+* Transmits: Pins 1, 2
+
+### Firewall
+
+* Receives: Pins 3, 6
+* Transmits: Pins 1, 2
+
+### Switch
+
+* Receives: Pins 1, 2
+* Transmits: Pins 3, 6
+
