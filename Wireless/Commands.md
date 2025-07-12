@@ -1,81 +1,79 @@
-## Wireless Debug & Show Commands
+# Cisco WLC CLI Commands
 
-| **Command**                                | **Purpose / Description**                                     |
-|--------------------------------------------|---------------------------------------------------------------|
-| `show wireless interface summary`          | Show status of wireless interfaces                            |
-| `show controllers dot11Radio 0`            | View radio-specific configurations                            |
-| `show dot11 associations`                  | Show associated clients                                       |
-| `debug dot11 mobility`                     | View roaming and association events                           |
-| `show run = section dot11`                 | View wireless-specific configuration section                  |
-| `show ap summary`                          | Show wireless stats                                           |
-| `show capwap client rssi`                  | Show wireless stats                                           |
-| `show wireless security mfp`               | View 802.11 management protection                             |
-| `show capwap client config`                | Check CAPWAP tunnel status                                    |
-| `debug capwap events`                      | Check CAPWAP tunnel status                                    |
-| `show ap rogue summary`                    | View rogue devices or passive AP modes                        |
-| `show ap mode summary`                     | View rogue devices or passive AP modes                        |
-| `show dot11 security`                      | Check WPA settings on AP                                      |
-| `show run \| include SSID`                 | Check WPA settings on AP                                      |
-| `show wlan summary`                        | View authentication and key types                             |
-| `show wlan <id>`                           | View authentication and key types                             |
-| `debug client <mac-address>`              | View authentication and key types                             |
-| `show wlan <id>`                           | View WLAN settings (security, QoS, VLAN)                      |
-| `show interface summary`                   | List WLC interfaces                                           |
-| `show interface detailed <int>`            | Inspect CAPWAP, DHCP relay, and VLAN settings                 |
-| `show AP summary`                          | View AP to WLC tunnel status                                  |
-| `show client detail <mac>`                | Check auth method, state, and assigned VLAN                   |
+| **Command**                                                         | **Purpose / Description**                         |                                  |                          |
+| ------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------- | ------------------------ |
+| `show sysinfo`                                                      | Show WLC system information                       |                                  |                          |
+| `config hostname <name>`                                            | Set WLC hostname                                  |                                  |                          |
+| `config timezone <zone> <offset>`                                   | Set system timezone                               |                                  |                          |
+| `config country <country-code>`                                     | Set regulatory domain for RF compliance           |                                  |                          |
+| `show interface summary`                                            | List WLC interfaces                               |                                  |                          |
+| `config interface address management <IP> <netmask> <gateway>`      | Set management interface IP, mask, and gateway    |                                  |                          |
+| `config interface vlan management <vlan-id>`                        | Set management VLAN ID                            |                                  |                          |
+| \`config interface port management <1                               | 2>\`                                              | Bind management to physical port |                          |
+| `config network secureweb enable`                                   | Enable HTTPS GUI access                           |                                  |                          |
+| `config network secureweb disable`                                  | Disable HTTPS access                              |                                  |                          |
+| `config network webmode enable`                                     | Enable HTTP access                                |                                  |                          |
+| `config network webmode disable`                                    | Disable HTTP access                               |                                  |                          |
+| `config network secureweb port <port>`                              | Set HTTPS access port                             |                                  |                          |
+| `show network summary`                                              | Show web access configuration                     |                                  |                          |
+| `config wlan create <wlan-id> <ssid> <profile-name>`                | Create a new WLAN (SSID) configuration            |                                  |                          |
+| `config wlan enable <wlan-id>`                                      | Enable WLAN                                       |                                  |                          |
+| `config wlan disable <wlan-id>`                                     | Disable WLAN                                      |                                  |                          |
+| `config wlan delete <wlan-id>`                                      | Delete a WLAN                                     |                                  |                          |
+| `config wlan interface <wlan-id> <interface-name>`                  | Bind WLAN to interface                            |                                  |                          |
+| `config wlan security wpa2 enable <wlan-id>`                        | Enable WPA2 security for WLAN                     |                                  |                          |
+| `config wlan security wpa2 aes enable <wlan-id>`                    | Enable AES encryption for WLAN                    |                                  |                          |
+| `config wlan security akm psk set-key ascii <wlan-id> <passphrase>` | Set WPA2-PSK passphrase for WLAN                  |                                  |                          |
+| `show wlan summary`                                                 | Show WLANs summary                                |                                  |                          |
+| `show wlan <id>`                                                    | Show specific WLAN configuration                  |                                  |                          |
+| \`show run                                                          | include SSID\`                                    | Filter config for SSID lines     |                          |
+| `show run = section dot11`                                          | View wireless-specific configuration section      |                                  |                          |
+| `show ap summary`                                                   | List APs registered to the WLC                    |                                  |                          |
+| `show ap config general <AP-name>`                                  | Show detailed AP configuration                    |                                  |                          |
+| `config ap name <AP-name> <MAC>`                                    | Rename an AP using its MAC address                |                                  |                          |
+| `config ap group-name <AP-name> <group>`                            | Assign AP to an AP group                          |                                  |                          |
+| `config ap primary-base <WLC-name> <AP-name> <WLC-IP>`              | Set WLC as primary for AP                         |                                  |                          |
+| \`config ap mode \<local                                            | monitor                                           | flexconnect> <AP-name>\`         | Change AP operation mode |
+| `config ap ip address static <IP> <netmask> <gateway> <AP-name>`    | Set static IP on AP                               |                                  |                          |
+| `show advanced 802.11a summary`                                     | Show RF settings for 5 GHz band                   |                                  |                          |
+| `show advanced 802.11b summary`                                     | Show RF settings for 2.4 GHz band                 |                                  |                          |
+| `config 802.11a enable`                                             | Enable 802.11a (5 GHz) radios                     |                                  |                          |
+| `config 802.11a disable`                                            | Disable 802.11a radios                            |                                  |                          |
+| `config 802.11b enable`                                             | Enable 802.11b (2.4 GHz) radios                   |                                  |                          |
+| `config 802.11b disable`                                            | Disable 802.11b radios                            |                                  |                          |
+| `show wireless interface summary`                                   | Show status of wireless interfaces                |                                  |                          |
+| `show controllers dot11Radio 0`                                     | Show radio-specific configs for dot11Radio 0      |                                  |                          |
+| `show dot11 associations`                                           | Show associated wireless clients                  |                                  |                          |
+| `debug dot11 mobility`                                              | Monitor wireless mobility/roaming events          |                                  |                          |
+| `debug client <mac-address>`                                        | Debug specific client traffic and auth            |                                  |                          |
+| `show client summary`                                               | Show all connected wireless clients               |                                  |                          |
+| `show client detail <mac>`                                          | Show specific client details, including VLAN/auth |                                  |                          |
+| `show capwap client rssi`                                           | Show CAPWAP signal strength for clients           |                                  |                          |
+| `show capwap client config`                                         | Show CAPWAP config and tunnel state               |                                  |                          |
+| `debug capwap events`                                               | Debug CAPWAP control and join processes           |                                  |                          |
+| `show ap rogue summary`                                             | Show detected rogue APs                           |                                  |                          |
+| `show ap mode summary`                                              | Show AP mode summary                              |                                  |                          |
+| `show dot11 security`                                               | Show current wireless security settings           |                                  |                          |
+| `show mobility summary`                                             | Show WLC mobility group members                   |                                  |                          |
+| `config interface create <name> <vlan-id>`                          | Create new interface bound to VLAN                |                                  |                          |
+| `config interface address <name> <IP> <netmask> <gateway>`          | Set interface IP configuration                    |                                  |                          |
+| `config interface dhcp <name> <server-IP>`                          | Assign DHCP server to interface                   |                                  |                          |
+| `config dhcp interface add <interface-name>`                        | Enable DHCP for interface                         |                                  |                          |
+| `config dhcp proxy enable`                                          | Enable DHCP proxy on WLC                          |                                  |                          |
+| `config dhcp proxy disable`                                         | Disable DHCP proxy                                |                                  |                          |
+| `show dhcp summary`                                                 | Show DHCP statistics                              |                                  |                          |
+| `ping <IP-address>`                                                 | Test connectivity to remote IP                    |                                  |                          |
+| `traceroute <IP-address>`                                           | Trace packet path to destination                  |                                  |                          |
+| `show arp`                                                          | Show ARP table on WLC                             |                                  |                          |
+| `show cpu statistics`                                               | Display WLC CPU usage and stats                   |                                  |                          |
+| `save config`                                                       | Save current running configuration to memory      |                                  |                          |
+| `reset system`                                                      | Reboot the WLC                                    |                                  |                          |
+| `show license summary`                                              | Show license usage and status                     |                                  |                          |
+| `config license add <license-key>`                                  | Apply a new license to the controller             |                                  |                          |
 
-## WLC Configuration commands: 
-# Cisco WLC CLI Configuration Commands for CCNA (Markdown Table Format)
 
-| Function                        | Command                                                             |         |                          |
-| ------------------------------- | ------------------------------------------------------------------- | ------- | ------------------------ |
-| Show WLC system info            | `show sysinfo`                                                      |         |                          |
-| Set hostname                    | `config hostname <name>`                                            |         |                          |
-| Set timezone                    | `config timezone <zone> <offset>`                                   |         |                          |
-| Set country regulatory domain   | `config country <country-code>`                                     |         |                          |
-| Show interfaces summary         | `show interface summary`                                            |         |                          |
-| Set management IP               | `config interface address management <IP> <netmask> <gateway>`      |         |                          |
-| Set management VLAN             | `config interface vlan management <vlan-id>`                        |         |                          |
-| Set management port             | \`config interface port management <1 2>\`                          |         |                          |
-| Create WLAN                     | `config wlan create <wlan-id> <ssid> <profile-name>`                |         |                          |
-| Enable WLAN                     | `config wlan enable <wlan-id>`                                      |         |                          |
-| Disable WLAN                    | `config wlan disable <wlan-id>`                                     |         |                          |
-| Delete WLAN                     | `config wlan delete <wlan-id>`                                      |         |                          |
-| Bind WLAN to interface          | `config wlan interface <wlan-id> <interface-name>`                  |         |                          |
-| Enable WPA2 on WLAN             | `config wlan security wpa2 enable <wlan-id>`                        |         |                          |
-| Enable AES on WLAN              | `config wlan security wpa2 aes enable <wlan-id>`                    |         |                          |
-| Set WPA2 PSK                    | `config wlan security akm psk set-key ascii <wlan-id> <passphrase>` |         |                          |
-| Show AP summary                 | `show ap summary`                                                   |         |                          |
-| Show AP config                  | `show ap config general <AP-name>`                                  |         |                          |
-| Rename AP                       | `config ap name <AP-name> <MAC>`                                    |         |                          |
-| Assign AP to group              | `config ap group-name <AP-name> <group>`                            |         |                          |
-| Set AP primary WLC              | `config ap primary-base <WLC-name> <AP-name> <WLC-IP>`              |         |                          |
-| Set AP mode                     | \`config ap mode \<local                                            | monitor | flexconnect> <AP-name>\` |
-| Set static AP IP address        | `config ap ip address static <IP> <netmask> <gateway> <AP-name>`    |         |                          |
-| Show 802.11a RF summary         | `show advanced 802.11a summary`                                     |         |                          |
-| Show 802.11b RF summary         | `show advanced 802.11b summary`                                     |         |                          |
-| Enable 802.11a radio            | `config 802.11a enable`                                             |         |                          |
-| Enable 802.11b radio            | `config 802.11b enable`                                             |         |                          |
-| Disable 802.11a radio           | `config 802.11a disable`                                            |         |                          |
-| Disable 802.11b radio           | `config 802.11b disable`                                            |         |                          |
-| Create VLAN interface           | `config interface create <name> <vlan-id>`                          |         |                          |
-| Set interface IP                | `config interface address <name> <IP> <netmask> <gateway>`          |         |                          |
-| Assign DHCP server to interface | `config interface dhcp <name> <server-IP>`                          |         |                          |
-| Assign DHCP to interface        | `config dhcp interface add <interface-name>`                        |         |                          |
-| Enable/disable DHCP proxy       | `config dhcp proxy enable/disable`                                  |         |                          |
-| Show DHCP summary               | `show dhcp summary`                                                 |         |                          |
-| Show connected clients          | `show client summary`                                               |         |                          |
-| Show WLAN summary               | `show wlan summary`                                                 |         |                          |
-| Show specific WLAN config       | `show wlan <wlan-id>`                                               |         |                          |
-| Show mobility summary           | `show mobility summary`                                             |         |                          |
-| Save running configuration      | `save config`                                                       |         |                          |
-| Reboot the controller           | `reset system`                                                      |         |                          |
-| Ping tool                       | `ping <IP-address>`                                                 |         |                          |
-| Traceroute tool                 | `traceroute <IP-address>`                                           |         |                          |
-| Show ARP table                  | `show arp`                                                          |         |                          |
-| Show CPU stats                  | `show cpu statistics`                                               |         |                          |
-| Show license summary            | `show license summary`                                              |         |                          |
-| Add license key                 | `config license add <license-key>`                                  |         |                          |
+
+
+                 |
 
 
