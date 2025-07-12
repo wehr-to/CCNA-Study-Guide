@@ -12,6 +12,8 @@
   2. Something you have
   3. Something you are
 
+- AAA Override = on a wireless LAN controller (WLC), can be used to configure virtual local area network (vlan) tagging, quality of service, and access to ACLs to individual clients based on RADIUS attributes
+
 ---
 
 ### Malware Types
