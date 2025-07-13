@@ -1,34 +1,97 @@
 # IPv4 Addressing and Interface Notes (CCNA)
 
----
+## IPv4 Address Properties
 
-## Address Types
+**Q: If the host portion of an IPv4 address is all 0s, what kind of address is it?**
+Network Address
 
-| **Question**                                                | **Answer**            |
-| ----------------------------------------------------------- | --------------------- |
-| Host portion all 0s                                         | Network Address       |
-| Host portion all 1s                                         | Broadcast Address     |
-| What kind of address is used to test local device software? | Loopback Address      |
-| IPv4 addresses beginning with 127                           | Loopback range        |
-| Groups of 8 bits in an IP address                           | Octets                |
-| What is class D reserved for?                               | Multicast Addresses   |
-| What is class E reserved for?                               | Experimental Purposes |
-| Length of IP address (bits)                                 | 32 Bits               |
-| Length of IP address (bytes)                                | 4 Bytes               |
-| Maximum value of a binary octet                             | 255                   |
+**Q: If the host portion of an IPv4 address is all 1s, what kind of address is it?**
+Broadcast Address
 
----
+**Q: IPv4 addresses beginning with 127 are used for loopback addresses.**
 
-## Loopback Range
+**Q: What kind of address is used to test the network software stack on the local device?**
+Loopback Address
 
-| **Address**                  | **Purpose**                                 |
-| ---------------------------- | ------------------------------------------- |
-| 127.0.0.1 to 127.255.255.255 | Reserved for loopback (local host testing)  |
-| 127.0.0.1                    | Most common — tests a device’s TCP/IP stack |
+**Q: What are the groups of 8 bits in an IP address called?**
+Octets
 
----
+**Q: What is the class D IPv4 address range reserved for?**
+Multicast Addresses
 
-## IP Address Classes
+**Q: What is the class E IPv4 address range reserved for?**
+Experimental Purposes (Think E for Experimental)
+
+**Q: What is the length of an IP address? (bits)**
+32 Bits
+
+**Q: What is the length of an IP address? (bytes)**
+4 Bytes
+
+**Q: What is the maximum value for a binary octet? (1111 1111)**
+255
+
+## Prefix Lengths & Netmasks
+
+**Q: If an interface has the shutdown command applied to it, what will the 'status' column of show ip interface brief display?**
+administratively down
+
+**Q: Interfaces on Cisco \[device type] are administratively down by default.**
+Routers
+
+**Q: Interfaces on Cisco \[device type] are NOT administratively down by default.**
+Switches
+
+* The Status field of the `show ip interface brief` command shows the **Layer 1** status of the interface.
+* The Protocol field of the `show ip interface brief` command shows the **Layer 2** status of the interface.
+
+## Host Calculation Formula
+
+**Q: What is the formula to calculate the maximum number of hosts in a network?**
+(2^n) - 2
+Where `n` = number of host bits.
+
+We subtract 2 for:
+
+* All 0s → Network address
+* All 1s → Broadcast address
+
+### Examples
+
+* /24 = 8 host bits → (2^8)-2 = 254
+* /16 = 16 host bits → (2^16)-2 = 65,534
+
+## IPv4 Address Classes
+
+### Class A
+
+**Q: Which IPv4 address class allows a total of 16,777,214 hosts per network?**
+Class A
+**Q: Which IPv4 address class contains a total of 128 networks?**
+Class A
+
+### Class B
+
+**Q: Which IPv4 address class allows a total of 65,534 hosts per network?**
+Class B
+**Q: Which IPv4 address class contains a total of 16,384 networks?**
+Class B
+
+### Class C
+
+**Q: Which IPv4 address class allows a total of 254 hosts per network?**
+Class C
+**Q: Which IPv4 address class contains a total of 2,097,152 networks?**
+Class C
+
+## Reserved Address Table
+
+| **Address Range**            | **Purpose**                                |
+| ---------------------------- | ------------------------------------------ |
+| 127.0.0.1 to 127.255.255.255 | Reserved for loopback (local host testing) |
+| 127.0.0.1                    | Used to test a device’s TCP/IP stack       |
+
+## IPv4 Class Summary
 
 | **Class** | **First Octet Range** | **Bit Pattern** | **Default Prefix** | **Hosts per Network** | **Networks** |
 | --------- | --------------------- | --------------- | ------------------ | --------------------- | ------------ |
@@ -38,9 +101,7 @@
 | D         | 224–239               | 1110xxxx        | Multicast          | N/A                   | N/A          |
 | E         | 240–255               | 1111xxxx        | Experimental       | N/A                   | N/A          |
 
----
-
-## CIDR and Subnet Masks
+## CIDR and Subnet Mask Reference
 
 | **CIDR** | **Subnet Mask** | **Class Default** |
 | -------- | --------------- | ----------------- |
@@ -48,50 +109,18 @@
 | /16      | 255.255.0.0     | Class B           |
 | /24      | 255.255.255.0   | Class C           |
 
----
+## Interface Status Table
 
-## Subnetting and Host Formula
+| **Status**            | **Protocol** | **Meaning**                                      |
+| --------------------- | ------------ | ------------------------------------------------ |
+| administratively down | down         | Interface is shut down by config                 |
+| up                    | down         | Layer 1 is up, Layer 2 misconfigured or inactive |
+| down                  | down         | Cable unplugged, disabled port, or no link       |
+| up                    | up           | Interface is fully operational                   |
 
-**Formula to calculate max hosts:**
-`(2^n) - 2`, where `n` is the number of host bits.
+## Default Interface States
 
-* Subtract 2 for:
-
-  * All 0s → Network address
-  * All 1s → Broadcast address
-
-**Examples:**
-
-* /24 = 8 host bits → (2^8)-2 = 254
-* /16 = 16 host bits → (2^16)-2 = 65,534
-
----
-
-## Interface Status and Protocol
-
-| **Status**            | **Protocol** | **What It Means**                                                      |
-| --------------------- | ------------ | ---------------------------------------------------------------------- |
-| administratively down | down         | Interface is manually shut down via `shutdown` command                 |
-| up                    | down         | Layer 1 is up, but Layer 2 has an issue (e.g., encapsulation mismatch) |
-| down                  | down         | No physical connection (e.g., unplugged cable, disabled port)          |
-| up                    | up           | Interface is functioning correctly                                     |
-
----
-
-## Device Interface Defaults
-
-| **Device Type** | **Default Interface State** | **Reason**                                                       |
-| --------------- | --------------------------- | ---------------------------------------------------------------- |
-| Routers         | administratively down (off) | Interfaces must be manually enabled and IP addressed             |
-| Switches        | up (enabled by default)     | Switchports are active by default for plug-and-play connectivity |
-
----
-
-## Useful Show Command Clarifications
-
-* `show ip interface brief` →
-
-  * **Status column**: reflects Layer 1 (physical link)
-  * **Protocol column**: reflects Layer 2 (data link/encapsulation)
-
----
+| **Device Type** | **Default Interface State** | **Reason**                                     |
+| --------------- | --------------------------- | ---------------------------------------------- |
+| Routers         | administratively down (off) | Interfaces are manually enabled and configured |
+| Switches        | up (enabled by default)     | Ports are active for plug-and-play support     |
