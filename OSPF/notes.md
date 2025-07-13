@@ -2,23 +2,27 @@
 
 # OSPF Key Concepts
 
-## General Concepts
-- An autonomous system boundary router (ASBR) is an OSPF router that connects the OSPF network to an external network.
-- OSPF LSAs are organized in a structure called the LSDB.
-- OSPF can divide networks into separate areas.
-- OSPF LSAs have a default aging timer of 30 minutes.
-- An area is a set of routers and links that share the same LSDB.
-- An interarea route is a route to a destination in a different OSPF area.
-- An intra-area route is a route to a destination inside the same OSPF area.
-- It is recommended that you connect an ABR to a maximum of 2 areas.
-- Routers connected to the backbone area (area 0) are called backbone routers.
-- Routers with all interfaces in the same area are called internal routers.
-- Routers with interfaces in multiple areas are called ABRs (Area Border Routers).
-- The backbone area (area 0) is an area that all other areas must connect to.
-- The Shortest Path First algorithm is also known as Dijkstra's algorithm.
-- The default OSPF reference bandwidth is 100 Mbps.
-- Formula to calculate cost: `reference bandwidth / interface bandwidth = cost`
-- Router IDs must not be unique
+## General OSPF Concepts
+
+| **Concept**                              | **Explanation**                                                        |
+| ---------------------------------------- | ---------------------------------------------------------------------- |
+| ASBR (Autonomous System Boundary Router) | An OSPF router that connects the OSPF domain to external networks      |
+| LSDB (Link-State Database)               | Structure where OSPF LSAs are stored                                   |
+| OSPF Areas                               | Used to divide OSPF networks into segments for scalability             |
+| OSPF LSA Aging Timer                     | Default refresh interval is 30 minutes                                 |
+| OSPF Area Definition                     | A group of routers and links sharing the same LSDB                     |
+| Interarea Route                          | Route to a destination in a different OSPF area                        |
+| Intra-area Route                         | Route to a destination within the same OSPF area                       |
+| ABR (Area Border Router) Recommendation  | Recommended to connect an ABR to no more than 2 areas                  |
+| Backbone Routers                         | Routers connected to area 0                                            |
+| Internal Routers                         | Routers with all interfaces in the same area                           |
+| ABRs                                     | Routers with interfaces in multiple areas                              |
+| Backbone Area (Area 0)                   | Core OSPF area; all other areas must connect to it                     |
+| SPF (Shortest Path First) Algorithm      | OSPF path calculation algorithm, also known as Dijkstra's algorithm    |
+| Default OSPF Reference Bandwidth         | 100 Mbps                                                               |
+| OSPF Cost Formula                        | Cost = reference bandwidth / interface bandwidth                       |
+| Router ID Uniqueness                     | Router IDs **must** be unique (note: original statement was incorrect) |
+
 
 ## Network Types & Timers
 
@@ -50,16 +54,19 @@
 7. Full  
 
 ## Neighbor and Adjacency Behavior
-- Hello messages are sent to `224.0.0.5`
-- Messages to the DR/BDR are sent to `224.0.0.6`
-- DROthers only form Full state with DR and BDR, not each other
-- If a router receives a Hello packet without seeing its own Router ID in it → `Init`
-- If no Hello messages have been received → `Down`
-- When a router sees its own Router ID in a Hello packet → `2-Way`
-- DR/BDR are elected in the `2-Way` state
-- In `Exchange` → Routers exchange DBDs
-- In `Loading` → Routers send LSRs for needed LSAs
-- In `Full` → LSDBs are synchronized
+
+| **State / Message**      | **Description**                                                 |
+| ------------------------ | --------------------------------------------------------------- |
+| Hello Messages           | Sent to `224.0.0.5`                                             |
+| DR/BDR Election Messages | Sent to `224.0.0.6`                                             |
+| DROthers                 | Form Full state only with DR and BDR, not each other            |
+| `Down` State             | No Hello messages received                                      |
+| `Init` State             | Hello received without seeing own Router ID                     |
+| `2-Way` State            | Hello received that includes own Router ID; DR/BDR elected here |
+| `Exchange` State         | Routers exchange Database Description (DBD) packets             |
+| `Loading` State          | Routers send Link State Requests (LSRs) for needed LSAs         |
+| `Full` State             | LSDBs are fully synchronized between routers                    |
+
 
 ## OSPF Router ID Selection Priority
 1. Manually configured Router ID
