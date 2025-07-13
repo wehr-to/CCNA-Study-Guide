@@ -12,8 +12,6 @@ Virtual Interface
 Service port interface
 ```
 
-This markdown contains all relevant WLC configuration topics for the CCNA exam, including interface types, switch configurations, WLAN setup, FlexConnect, verification, and official Cisco references. All content is in one block for easy import into your documentation.
-
 ## 1. What is a WLC?
 
 A Wireless LAN Controller (WLC) centrally manages Cisco lightweight access points (APs) using the CAPWAP protocol. WLCs simplify enterprise Wi-Fi deployment by handling:
@@ -208,7 +206,7 @@ Use FlexConnect in remote sites with WAN constraints
 | View interfaces                | `show interface summary`                         |
 | Save config                    | `save config`                                    |
 
-📚 Cisco Best Practices:
+Cisco Best Practices:
 https://www.cisco.com/c/en/us/td/docs/wireless/controller/technotes/8-6/b_Cisco_Wireless_LAN_Controller_Configuration_Best_Practices.html
 
 
