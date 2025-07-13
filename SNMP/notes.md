@@ -1,48 +1,66 @@
-- SNMP Agents use UDP port 161.
-- SNMP Managers use UDP port 162.
+# SNMP 
 
-- Each variable in the SNMP MIB is identified with an OID
-- The Management Information Base (MIB) is the structure that contains the variables that are managed by SNMP.
-- The SNMP Agent is software on the managed devices
--The SNMP Manager is software on the NMS
+## SNMP Ports
 
-- Q: What are the two types of devices in SNMP?
-- 1: Managed Devices 
-- 2: Network Management Station (NMS)
-- Q: What does MIB stand for?
-- Management Information Base
-- Q: What does NMS stand for?
-- Network Management Station
-- Q: What does OID stand for?
-- Object ID
-- Q: What does SNMP stand for?
-- Simple network management protocol 
-- Q: What is the most commonly used version of SNMPv2?
+| Component        | Protocol | Port |
+|------------------|----------|------|
+| SNMP Agent       | UDP      | 161  |
+| SNMP Manager     | UDP      | 162  |
+
+## SNMP Structure and Components
+
+- Each variable in the SNMP MIB is identified with an OID  
+- The Management Information Base (MIB) is the structure that contains the variables that are managed by SNMP  
+- The SNMP Agent is software on the managed devices  
+- The SNMP Manager is software on the NMS  
+
+## SNMP Device Types
+
+**Q: What are the two types of devices in SNMP?**  
+- 1: Managed Devices  
+- 2: Network Management Station (NMS)  
+
+## SNMP Terminology
+
+| Abbreviation | Stands For                         |
+|--------------|------------------------------------|
+| MIB          | Management Information Base        |
+| NMS          | Network Management Station         |
+| OID          | Object ID                          |
+| SNMP         | Simple Network Management Protocol |
+
+## SNMP Versions
+
+**Q: What is the most commonly used version of SNMPv2?**  
 - SNMPv2c
-- Q: Which SNMP message is a more efficient version of the GetNext message?
-- GetBulk
-- Q: Which SNMP message is a request sent from the manager to the agent to change the value of one or more variables?
-- Set
-- Q: Which SNMP message is a request sent from the manager to the agent to discover the available variables in the MIB?
-- GetNext
-- (also GetBulk, which is a more efficient version)
-- Q: Which SNMP message is a request sent from the manager to the agent to retrieve the value of a variable (OID), or multiple variables?
-- Get
-- Q: Which SNMP message is an acknowleged notification sent from the agent to the manager?
-- Inform
-- Q: Which SNMP message is an unacknowleged notification sent from the agent to the manager?
-- Trap
 
-- Q: Which SNMP message(s) is/are in the 'notification' message class?
-- 1: Trap 
-- 2: Inform
-- Q: Which SNMP message(s) is/are in the 'read' message class?
-- 1: Get
-- 2: GetNext
-- 3: GetBulk
-- Q: Which SNMP message(s) is/are in the 'response' message class?
-- Response
-- Q: Which SNMP message(s) is/are in the 'write' message class?
-- Set
-- Q: Which version of SNMP is most secure?
+**Q: Which version of SNMP is most secure?**  
 - SNMPv3
+  
+## SNMP Message Types
+
+| Question                                                                                       | Answer      |
+|------------------------------------------------------------------------------------------------|-------------|
+| Which SNMP message is a more efficient version of the GetNext message?                        | GetBulk     |
+| Which SNMP message is a request sent from the manager to the agent to change values?          | Set         |
+| Which SNMP message is a request sent from the manager to discover variables in the MIB?       | GetNext     |
+| (also GetBulk, which is a more efficient version)                                             |             |
+| Which SNMP message is a request to retrieve the value of a variable (OID), or multiple?       | Get         |
+| Which SNMP message is an acknowledged notification from agent to manager?                     | Inform      |
+| Which SNMP message is an unacknowledged notification from agent to manager?                   | Trap        |
+## SNMP Message Classes
+
+### Notification Message Class
+- Trap  
+- Inform  
+
+### Read Message Class
+- Get  
+- GetNext  
+- GetBulk  
+
+### Response Message Class
+- Response  
+
+### Write Message Class
+- Set  
