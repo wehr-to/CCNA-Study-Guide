@@ -2,10 +2,10 @@
 
 | **Password Type** | **Command / Location**           | **Encryption Method**        | **Config Output Example**             | **Notes**                                        |
 |-------------------|----------------------------------|------------------------------|----------------------------------------|--------------------------------------------------|
-| Type 0            | `enable password`, line vty/console | Plaintext                   | `password 0 cisco`                      | Insecure — never use in production               |
-| Type 7            | `service password-encryption`    | Reversible Vigenère cipher   | `password 7 0822455D0A16`              | Weak — can be decrypted                         |
-| Type 5            | `enable secret`                  | MD5 Hash                     | `secret 5 $1$Abcd$WXYZ...`             | Much better — industry standard for a long time |
-| Type 4            | Deprecated                       | SHA-256, bad salt impl.      | `secret 4 ...`                         | Not used anymore — flawed design                |
+| Type 0            | `enable password`, line vty/console | Plaintext                   | `password 0 cisco`                      | Insecure, never use in production               |
+| Type 7            | `service password-encryption`    | Reversible Vigenère cipher   | `password 7 0822455D0A16`              | Weak, can be decrypted                         |
+| Type 5            | `enable secret`                  | MD5 Hash                     | `secret 5 $1$Abcd$WXYZ...`             | Much better, industry standard for a long time |
+| Type 4            | Deprecated                       | SHA-256, bad salt impl.      | `secret 4 ...`                         | Not used anymore, flawed design                |
 | Type 8            | `username X secret 8`            | PBKDF2 (SHA-256)             | `secret 8 $8$...`                      | Strong, modern standard                         |
 | Type 9            | `username X secret 9`            | Scrypt (very strong)         | `secret 9 $9$...`                      | Strongest current encryption                    |
 | None (default)    | Not set                          | —                            | No entry in config                     | Login not possible until password is set        |
