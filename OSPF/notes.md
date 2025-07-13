@@ -84,7 +84,7 @@
 | Loopback           | 1    |
 
 ## Special Notes
-- OSPF cost is affected by the `bandwidth` command (for metric), but not interface speed — the `speed` command affects real interface performance.
+- OSPF cost is affected by the `bandwidth` command (for metric), but not interface speed, the `speed` command affects real interface performance.
 - OSPF interface priority default = 1
 - Serial links use HDLC by default
 - DCE (Data Communications Equipment) must define clock rate on serial links
