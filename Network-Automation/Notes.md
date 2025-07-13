@@ -96,3 +96,13 @@ DELETE - Removes an object / Delete
 PATCH - Applies partial modifications to an object / Update
 ```
 
+# Cisco Management Solutions Overview
+
+| **Solution**                    | **Type**                    | **Description**                                                                                      | **Key Use Cases**                                                              |
+| ------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Cisco IOS 15                    | Network OS (CLI-based)      | The traditional operating system for Cisco routers and switches; CLI-driven configuration model.     | Device-level configuration, routing, switching, CLI management.                |
+| Cisco DNA Center                | Centralized controller      | Intent-based network management platform with automation, assurance, and analytics.                  | SD-Access, policy automation, AI-driven insights, software-defined networking, SDA |
+| Cisco Network Assistant         | GUI-based desktop tool      | Lightweight management tool for small to medium-sized LANs; uses GUI to configure Cisco devices.     | VLANs, port status, topology maps, configuration backup for SMB.               |
+| Cisco Prime Infrastructure (PI) | Network management platform | Legacy NMS for managing wired/wireless devices; integrates monitoring, configuration, and inventory. | Lifecycle management, wireless control, reports, device tracking.              |
+
+
