@@ -1,7 +1,5 @@
 # Access Control Lists (ACLs) 
 
-# Access Control List (ACL) Traffic Direction
-
 ## Inbound vs Outbound ACLs
 
 | Direction | Description |
