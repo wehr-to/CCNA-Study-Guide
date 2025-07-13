@@ -144,3 +144,59 @@ Class C
 | --------------- | --------------------------- | ---------------------------------------------- |
 | Routers         | administratively down (off) | Interfaces are manually enabled and configured |
 | Switches        | up (enabled by default)     | Ports are active for plug-and-play support     |
+
+# Paired IP Addresses on Point-to-Point Links
+
+## What is a Point-to-Point Link?
+
+A point-to-point link is a direct connection between two network devices (typically routers) with no intermediate devices in between.
+
+## Why Use Paired IP Addresses?
+
+- Point-to-point links only require **two IP addresses** — one for each end.
+- To conserve IP space, a **/30 subnet** (4 IPs, 2 usable) or **/31 subnet** (2 IPs, 2 usable) is typically used.
+- These IP addresses are **paired** because they are directly related and only connect to each other.
+
+## Example: /30 Subnet (Traditional)
+
+| IP Address     | Role              |
+|----------------|-------------------|
+| 192.168.1.0    | Network ID        |
+| 192.168.1.1    | Router A Interface|
+| 192.168.1.2    | Router B Interface|
+| 192.168.1.3    | Broadcast Address |
+
+### Usable Paired IPs:
+- **192.168.1.1 ↔ 192.168.1.2**
+
+## Example: /31 Subnet (RFC 3021)
+
+| IP Address     | Role              |
+|----------------|-------------------|
+| 10.0.0.0       | Router A Interface|
+| 10.0.0.1       | Router B Interface|
+
+- No network or broadcast address needed
+- Entire /31 space is usable for just two hosts
+- Supported in modern routing platforms
+
+### Usable Paired IPs:
+- **10.0.0.0 ↔ 10.0.0.1**
+
+## Configuration Example (Cisco IOS)
+
+```bash
+interface Serial0/0
+ ip address 192.168.1.1 255.255.255.252
+
+interface Serial0/1
+ ip address 192.168.1.2 255.255.255.252
+```
+
+| Feature           | /30 Subnet   | /31 Subnet       |
+| ----------------- | ------------ | ---------------- |
+| IPs per subnet    | 4            | 2                |
+| Usable addresses  | 2            | 2                |
+| Broadcast address | Yes          | No               |
+| Efficiency        | Moderate     | High             |
+| Common use case   | Legacy links | Modern P2P links |
