@@ -29,6 +29,17 @@
 | OID          | Object ID                          |
 | SNMP         | Simple Network Management Protocol |
 
+| Term     | Description |
+|----------|-------------|
+| **Agent** | Software running on a managed device (e.g., switch, router, firewall) that collects and stores management information and responds to SNMP requests from the NMS. |
+| **SNMP** | Simple Network Management Protocol – a protocol used to monitor, manage, and configure network devices using a manager-agent model. |
+| **ASN.1** | Abstract Syntax Notation One – a standard data representation format used in SNMP to encode and decode MIB objects in a platform-independent way. |
+| **MIB** | Management Information Base – a hierarchical database/schema of all the managed objects (identified by OIDs) that an SNMP agent can report on. |
+| **NMS** | Network Management Station – the system (typically software) that queries agents, collects data, and issues configuration commands using SNMP. |
+| **Probe** | A device or software sensor that collects performance or traffic data, often used in passive monitoring or packet capture scenarios. |
+| **RMON** | Remote Monitoring – an SNMP extension that allows for proactive network monitoring directly from devices (agents) without continuous polling from the NMS. |
+| **RMON2** | Enhanced RMON – expands RMON by adding Layer 3 and Layer 4 monitoring capabilities (e.g., IP hosts, applications, protocol analysis). |
+
 ## SNMP Versions
 
 **Q: What is the most commonly used version of SNMPv2?**  
