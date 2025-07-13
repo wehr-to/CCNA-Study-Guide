@@ -1,4 +1,4 @@
-# GRE (Generic Routing Encapsulation) – Protocol Overview
+# GRE (Generic Routing Encapsulation) / Protocol Overview
 
 ## What is GRE?
 
