@@ -17,35 +17,6 @@
 | What is the length of an IP address? (bytes)                                         | 4 Bytes               |
 | What is the maximum value for a binary octet? (1111 1111)                            | 255                   |
 
-**Q: If the host portion of an IPv4 address is all 0s, what kind of address is it?**
-Network Address
-
-**Q: If the host portion of an IPv4 address is all 1s, what kind of address is it?**
-Broadcast Address
-
-**Q: IPv4 addresses beginning with 127 are used for loopback addresses.**
-
-**Q: What kind of address is used to test the network software stack on the local device?**
-Loopback Address
-
-**Q: What are the groups of 8 bits in an IP address called?**
-Octets
-
-**Q: What is the class D IPv4 address range reserved for?**
-Multicast Addresses
-
-**Q: What is the class E IPv4 address range reserved for?**
-Experimental Purposes (Think E for Experimental)
-
-**Q: What is the length of an IP address? (bits)**
-32 Bits
-
-**Q: What is the length of an IP address? (bytes)**
-4 Bytes
-
-**Q: What is the maximum value for a binary octet? (1111 1111)**
-255
-
 ---
 
 ## Prefix Lengths & Netmasks
