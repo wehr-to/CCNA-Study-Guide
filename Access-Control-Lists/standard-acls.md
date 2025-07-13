@@ -1,4 +1,37 @@
-**# Access Control Lists (ACLs) – Notes
+# Access Control Lists (ACLs) 
+
+# Access Control List (ACL) Traffic Direction
+
+## Inbound vs Outbound ACLs
+
+| Direction | Description |
+|-----------|-------------|
+| **Inbound** | ACL is applied **before** the router makes a routing decision. Traffic is filtered as it **enters** the interface. |
+| **Outbound** | ACL is applied **after** the routing decision has been made. Traffic is filtered as it **leaves** the interface. |
+
+## Key Differences
+
+- **Inbound ACLs**:
+  - Filter traffic **entering** the router interface.
+  - Efficient if you want to deny packets before any processing occurs.
+  - Ideal for **blocking external threats** or limiting incoming access.
+
+- **Outbound ACLs**:
+  - Filter traffic **exiting** the router interface.
+  - Packets are already routed, so more processing overhead.
+  - Useful for **controlling what internal traffic leaves** a network.
+
+## Example
+
+```bash
+# Apply ACL 100 inbound on GigabitEthernet0/1
+interface GigabitEthernet0/1
+ ip access-group 100 in
+
+# Apply ACL 101 outbound on GigabitEthernet0/2
+interface GigabitEthernet0/2
+ ip access-group 101 out
+
 
 ### Core Concepts
 - **How many ACLs can be applied to a single interface?**  
