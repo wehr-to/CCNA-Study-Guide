@@ -10,8 +10,6 @@
 
 Cisco exam may call it: **Management Frame Protection (MFP)**
 
----
-
 ## Management Frame Vulnerabilities
 
 By default, management frames (like deauthentication, disassociation, beacon frames) are unencrypted — meaning attackers can:
@@ -26,16 +24,12 @@ By default, management frames (like deauthentication, disassociation, beacon fra
 
 This blocks one of the most common Wi-Fi attack vectors.
 
----
-
 ## Quick Memory Hooks
 
-- **w = wall** → Builds a wall around management frames (protection)  
-- **k = know** → Helps devices "know" nearby APs  
-- **r = run** → Helps clients run (roam) fast between APs  
-- **v = vote** → APs "vote" and suggest where a client should roam
-
----
+- **w = wall** > Builds a wall around management frames (protection)  
+- **k = know** > Helps devices "know" nearby APs  
+- **r = run** > Helps clients run (roam) fast between APs  
+- **v = vote** > APs "vote" and suggest where a client should roam
 
 ## 802.11 Message Types
 
@@ -55,16 +49,12 @@ This blocks one of the most common Wi-Fi attack vectors.
 2. Control  
 3. Data  
 
----
-
 ## Wireless AP Deployment Methods (Architectures)
 
 **What are the three main wireless AP deployment methods?**
 1. Autonomous  
 2. Lightweight  
 3. Cloud-based  
-
----
 
 ## 802.11 Connection States
 
@@ -73,16 +63,12 @@ There are three 802.11 connection states:
 2. Authenticated, not Associated  
 3. Authenticated and Associated  
 
----
-
 ## CAPWAP Facts
 
 - CAPWAP Control tunnels use **UDP port 5246**
 - CAPWAP Data tunnels use **UDP port 5247**
 - CAPWAP control tunnel is **encrypted by default**
 - CAPWAP data tunnel is **not encrypted by default**
-
----
 
 ## AP Deployment Characteristics
 
@@ -93,8 +79,6 @@ There are three 802.11 connection states:
 - A Mobility Express WLC is integrated within an AP.
 - The use of lightweight APs and WLCs is also known as split-MAC architecture.
 
----
-
 ## WLC Capacity
 
 - A Cloud-based WLC can support about **3000 APs**
@@ -102,16 +86,12 @@ There are three 802.11 connection states:
 - A Unified WLC can support about **6000 APs**
 - An Embedded WLC can support about **200 APs**
 
----
-
 ## Connectivity
 
 - Autonomous APs connect to a switch via **trunk ports**
 - Lightweight APs connect to a switch via **access ports**
 - An Embedded WLC is integrated within a switch.
 - Cisco Meraki is a popular cloud-based AP solution
-
----
 
 ## Key Questions
 
@@ -129,8 +109,6 @@ A: Wireless LAN Controller
 
 **Q: What is the default operating mode of a lightweight AP, in which it offers a BSS for clients?**  
 A: Local  
-
----
 
 ## AP Operating Modes
 
@@ -155,8 +133,6 @@ A: Monitor
 **Q: Which lightweight AP operating mode is dedicated to RF spectrum analysis on all channels?**  
 A: SE-Connect  
 
----
-
 ## Scanning Behavior
 
 **Q: Which messages does a wireless station listen for when doing 802.11 passive scanning?**  
@@ -165,9 +141,6 @@ A: Beacon
 **Q: Which two messages are used for 802.11 active scanning?**  
 1. Probe request  
 2. Probe response  
-
-
-
 
 | Protocol  | Name                        | Purpose / What it Improves                                     | Exam Focus            |
 |-----------|-----------------------------|----------------------------------------------------------------|------------------------|
