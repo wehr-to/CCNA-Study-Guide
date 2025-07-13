@@ -1,7 +1,5 @@
 ## Cisco WLC & WLAN Security Notes
 
----
-
 ### Layer 2 Security Mechanisms
 - 802.1X is a Layer 2 security mechanism.
 - CKIP is a Layer 2 security mechanism. (CKIP = Cisco Key Integrity Protocol)
@@ -10,15 +8,11 @@
 - Static WEP + 802.1X is a Layer 2 security mechanism.
 - WPA + WPA2 is a Layer 2 security mechanism.
 
----
-
 ### Layer 3 Security Mechanisms
 - Web Authentication is a Layer 3 security mechanism.
 - Web Passthrough is a Layer 3 security mechanism.
 - Splash Page Web Redirect is a Layer 3 security mechanism.
 - Conditional Web Redirect is a Layer 3 security mechanism.
-
----
 
 ### WLAN QoS Tiers
 | QoS Tier   | Label        | Usage Type     |
@@ -30,15 +24,11 @@
 
 - Silver is the **default QoS** setting of a WLAN.
 
----
-
 ### WLAN PSK Configuration
 - WLAN PSKs in **ASCII format** must be at least **8 characters**.
 - WLAN PSKs can be configured in:
   - **ASCII**
   - **HEX**
-
----
 
 ### WLC Interface Functions
 
@@ -52,8 +42,6 @@
 | **Dynamic Interfaces**    | Map WLANs to VLANs                                                      |
 
 - CAPWAP tunnels are formed to/from the **WLC's management interface**.
-
----
 
 ### General WLC Notes
 - WLCs only support **static LAG** (PAgP and LACP are **not supported**).
@@ -118,19 +106,17 @@
 
 **Q: Which security method uses Layer 3 web authentication?**  
 - Web Auth  
-- 802.1X → Layer 2
+- 802.1X > Layer 2
 
 **Q: What interface handles DHCP relay and web authentication?**  
 - Virtual interface  
-- Management → for control plane traffic
+- Management > for control plane traffic
 
 **Q: Can WLCs negotiate EtherChannels with LACP?**  
-- No — only static LAG is supported
+- No, only static LAG is supported
 
 **Q: How many characters must an ASCII PSK be?**  
 - Minimum 8 characters
-
----
 
 ## Mnemonics
 
