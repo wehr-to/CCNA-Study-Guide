@@ -17,7 +17,25 @@
 | What is the length of an IP address? (bytes)                                         | 4 Bytes               |
 | What is the maximum value for a binary octet? (1111 1111)                            | 255                   |
 
----
+# RFC 1918 Private IP Address Ranges
+
+RFC 1918 defines three blocks of IP addresses reserved for private use, intended to conserve globally unique IPv4 addresses.
+
+| CIDR Block      | IP Range             | Default Class | Number of Hosts |
+|-----------------|----------------------|---------------|------------------|
+| 10.0.0.0/8      | 10.0.0.0 – 10.255.255.255   | Class A       | ~16.7 million     |
+| 172.16.0.0/12   | 172.16.0.0 – 172.31.255.255 | Class B       | ~1 million        |
+| 192.168.0.0/16  | 192.168.0.0 – 192.168.255.255 | Class C     | ~65,000           |
+
+## Key Notes
+
+- These addresses are **not routable on the public internet**.
+- Must be **NATed** (Network Address Translation) to communicate externally.
+- Commonly used in LANs, home networks, enterprise internal addressing.
+
+## Purpose of RFC 1918
+
+> To allow organizations to use IP addressing internally without registering with IANA, thus conserving globally routable IPv4 address space.
 
 ## Prefix Lengths & Netmasks
 
