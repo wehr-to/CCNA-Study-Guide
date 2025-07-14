@@ -91,11 +91,16 @@
 
 # 802.1Q Tag Details
 
-- 802.1Q tag: The **VID** field identifies the VLAN the frame belongs to.
-- 802.1Q tag: The **DEI** field indicates that a frame can be dropped if the network is congested.
-- 802.1Q tag: The **PCP** field is used for Class of Service (CoS).
-- 802.1Q tag: The **DEI** field is **1 bit** in length.
-- 802.1Q tag: The **PCP** field is **3 bits** in length.
-- 802.1Q tag: The **TPID** field is **16 bits** in length.
-- The **802.1Q tag** is **4 bytes** in total length.
-- 802.1Q tag: The **TPID** field is always set to a value of **0x8100**.
+# 802.1Q Tag Field Reference
+
+| Field/Fact                                | Description |
+|-------------------------------------------|-------------|
+| 802.1Q tag: The **VID** field             | Identifies the VLAN the frame belongs to. |
+| 802.1Q tag: The **DEI** field             | Indicates that a frame can be dropped if the network is congested. |
+| 802.1Q tag: The **PCP** field             | Is used for Class of Service (CoS). |
+| 802.1Q tag: The **DEI** field             | Is **1 bit** in length. |
+| 802.1Q tag: The **PCP** field             | Is **3 bits** in length. |
+| 802.1Q tag: The **TPID** field            | Is **16 bits** in length. |
+| The **802.1Q tag**                        | Is **4 bytes** in total length. |
+| 802.1Q tag: The **TPID** field            | Is always set to a value of **0x8100**. |
+
