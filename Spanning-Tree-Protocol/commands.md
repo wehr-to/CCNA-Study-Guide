@@ -27,6 +27,6 @@ interface FastEthernet0/1
  spanning-tree portfast
  spanning-tree bpduguard enable
  spanning-tree guard root
-
+```
 **Q:** What ports does `spanning-tree portfast default` affect?  
 **A:** All access ports
