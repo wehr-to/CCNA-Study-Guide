@@ -57,28 +57,26 @@ Encryption and MIC mode
 - **Q: What are the two WPA authentication modes?**  
   1: Personal  
   2: Enterprise
+  
+### Acronyms and Definitions
 
----
+| Acronym  | Stands For                                                  |
+|----------|-------------------------------------------------------------|
+| CBC-MAC  | Cipher Block Chaining Message Authentication Code           |
+| CCMP     | Counter/CBC-MAC Protocol                                    |
+| EAP      | Extensible Authentication Protocol                          |
+| EAP-FAST | EAP Flexible Authentication via Secure Tunneling            |
+| EAP-TLS  | EAP Transport Layer Security                                |
+| GCMP     | Galois/Counter Mode Protocol                                |
+| GMAC     | Galois Message Authentication Code                          |
+| LEAP     | Lightweight EAP                                             |
+| MIC      | Message Integrity Check                                     |
+| MS-CHAP  | Microsoft Challenge-Handshake Authentication Protocol       |
+| PEAP     | Protected EAP                                               |
+| PSK      | Pre-Shared Key                                              |
+| TKIP     | Temporal Key Integrity Protocol                             |
+| WEP      | Wired Equivalent Privacy                                    |
 
-### acronyms and Definitions
-
-| Acronym | Stands For |
-|--------|-------------|
-| CBC-MAC | Cipher Block Chaining Message Authentication Code |
-| CCMP | Counter/CBC-MAC Protocol |
-| EAP | Extensible Authentication Protocol |
-| EAP-FAST | EAP Flexible Authentication via Secure Tunneling |
-| EAP-TLS | EAP Transport Layer Security |
-| GCMP | Galois/Counter Mode Protocol |
-| GMAC | Galois Message Authentication Code |
-| LEAP | Lightweight EAP |
-| MIC | Message Integrity Check |
-| MS-CHAP | Microsoft Challenge-Handshake Authentication Protocol |
-| PEAP | Protected EAP |
-| TKIP | Temporal Key Integrity Protocol |
-| WEP | Wired Equivalent Privacy |
-
----
 
 ### Protocol Components
 
@@ -86,8 +84,6 @@ Encryption and MIC mode
 |----------|----------------------------|----------------|
 | CCMP     | AES counter mode           | CBC-MAC        |
 | GCMP     | AES Counter Mode           | GMAC           |
-
----
 
 ### Additional Questions
 
@@ -150,6 +146,8 @@ Encryption and MIC mode
 | MFP failures (802.11w)  | Disassoc due to invalid frame                    |
 | WPA3 SAE failure        | Unable to complete handshake                     |
 | WEP MIC errors          | WEP MIC failure - possible replay attack         |
+
+### Mnemonics 
 
 | Term      | Mnemonic Meaning                                       |
 |-----------|--------------------------------------------------------|
