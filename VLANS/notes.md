@@ -7,7 +7,7 @@
 
 ## 2. Inter-VLAN Traffic Fails
 - **Symptom:** Devices in different VLANs can’t talk  
-- **Cause:** No routing — either no ROAS or SVIs not configured  
+- **Cause:** No routing, either no ROAS or SVIs not configured  
 - **Fix:** Use ROAS on router or `ip routing` with SVIs on multilayer switch
 
 ## 3. Trunk Mismatch
@@ -19,8 +19,6 @@
 - **Symptom:** SVI IP unreachable  
 - **Cause:** VLAN doesn’t exist or has no active ports  
 - **Fix:** Ensure VLAN is created and assigned to at least one up/up port
-
----
 
 # VLAN Key Concepts
 
@@ -36,8 +34,6 @@
 - **SVIs** are virtual interfaces with IPs used for inter-VLAN routing on multilayer switches.
 - **SVIs are shutdown by default.**
 
----
-
 # VLAN Ranges
 
 | Range       | Purpose          |
@@ -48,16 +44,12 @@
 
 - The total **usable VLAN range** is **1–4094**.
 
----
-
 # VLAN Tagging
 
 - Trunk ports = **tagged**
 - Access ports = **untagged**
 - Switches **tag frames** with a VLAN ID on trunk ports.
 - **Untagged frames** on trunk ports are assumed to belong to the **native VLAN**.
-
----
 
 # VLAN FAQs
 
