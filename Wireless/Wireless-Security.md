@@ -37,14 +37,10 @@ Encryption and MIC mode
 | Authenticator     | The device that provides access to the network |
 | Authentication Server (AS) | The device that receives client credentials and permits/denies access |
 
----
-
 ### EAP-FAST: 3 Phases
 1. PAC is passed from server to client  
 2. Secure TLS tunnel is established  
 3. Client is authenticated via the TLS tunnel
-
----
 
 ### Questions & Answers
 
