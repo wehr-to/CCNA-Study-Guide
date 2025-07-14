@@ -10,7 +10,15 @@
 - The **RSTP Backup Port** role functions as a backup to the **Designated Port**.
   - Discarding state; receives a **superior BPDU from the same switch**.
 
----
+# RSTP Port Roles – Reference Table
+
+| Port Role     | Description |
+|---------------|-------------|
+| **Root Port (RP)** | The single port on a switch that has the **best path to the root bridge**. Only one root port is allowed per switch (except the root bridge, which has none). |
+| **Designated Port (DP)** | A port on a segment that is **responsible for forwarding frames toward the segment**. There is one designated port per collision domain (segment). |
+| **Alternate Port** | A port that provides an **alternate path to the root bridge** if the root port fails. It is in a **discarding state** until needed. |
+| **Backup Port** | A redundant port that exists **on the same switch and segment** as a designated port. It acts as a backup if the designated port fails. Also remains in the **discarding state**. |
+| **Disabled Port** | A port that is administratively shut down or not participating in STP. It does not forward or receive BPDUs. |
 
 ## RSTP Q&A
 
