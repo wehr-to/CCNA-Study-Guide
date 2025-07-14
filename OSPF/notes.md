@@ -73,6 +73,33 @@
 2. Highest IP on a loopback interface
 3. Highest IP on a physical interface
 
+| Step | Method                                                                                  | Notes                                                           |
+| ---- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| 1    | Use the **highest IPv4 address on a loopback** interface                                | Loopbacks are preferred because they are logical and always up. |
+| 2    | If no loopbacks exist, use the **highest IPv4 address on an active physical interface** | The interface must be **up/up** at the time the process starts. |
+
+# Router ID (RID) Selection in Routing Protocols
+
+## Overview
+
+The **Router ID** is a 32-bit identifier used by routing protocols (e.g., OSPF, EIGRP, BGP) to uniquely identify a router within a routing domain.  
+It looks like an IPv4 address but is **not required to be reachable**.
+
+---
+
+## Router ID Selection Order
+
+### Case 1: Router ID is Configured Manually
+
+| Step | Method                             | Notes |
+|------|------------------------------------|-------|
+| 1    | Use manually configured `router-id` | Highest priority. Overrides all other options. |
+
+```bash
+router ospf 1
+ router-id 1.1.1.1
+```
+
 ## OSPF Cost Examples (Default Reference BW = 100 Mbps)
 
 | Interface Type     | Cost |
