@@ -1,5 +1,23 @@
 # Real-World VLAN Scenarios
 
+## Default Behavior: 
+
+| Item                            | Default Behavior/Value |
+|---------------------------------|-------------------------|
+| Default VLAN                    | VLAN 1                  |
+| VLAN 1 Purpose                  | Used for control traffic (CDP, STP, VTP, PAgP, DTP) |
+| Default Native VLAN             | VLAN 1                  |
+| Number of VLANs on Catalyst Switches | 1–4094 supported        |
+| Normal VLAN Range               | VLANs 1–1005            |
+| Extended VLAN Range             | VLANs 1006–4094         |
+| VLANs saved in                  | `vlan.dat` file in flash |
+| Interfaces at default           | All interfaces are in VLAN 1 unless configured otherwise |
+| Trunk Ports by Default          | Operate in dynamic desirable (DTP) mode |
+| Native VLAN Tagging             | Native VLAN (default VLAN 1) is **not tagged** on 802.1Q trunks |
+| VLAN 1 Deletion                 | **Cannot be deleted** |
+| VLAN 1 Shutdown                 | **Cannot be shut down** |
+| Reserved VLANs                  | VLANs 0, 4095 (used internally, not assignable) |
+
 ## 1. Security Misconfig
 - **Symptom:** Unwanted VLAN hopping or rogue DHCP servers  
 - **Cause:** Native VLAN left as VLAN 1 across trunk links  
