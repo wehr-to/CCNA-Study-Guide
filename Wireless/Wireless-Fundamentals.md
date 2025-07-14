@@ -147,22 +147,25 @@
 
 ## Acronyms
 
-- AP: Access Point  
-- BSA: Basic Service Area  
-- BSS: Basic Service Set  
-- BSSID: Basic Service Set Identifier  
-- CSMA/CA: Carrier Sense Multiple Access with Collision Avoidance  
-- DS: Distribution System  
-- ESS: Extended Service Set  
-- GHz: Gigahertz  
-- Hz: Hertz  
-- IBSS: Independent Basic Service Set  
-- kHz: Kilohertz  
-- MBSS: Mesh Basic Service Set  
-- MHz: Megahertz  
-- SSID: Service Set Identifier  
-- THz: Terahertz  
-- WGB: Workgroup Bridge  
+| Acronym     | Stands For                                            |
+|-------------|--------------------------------------------------------|
+| AP          | Access Point                                           |
+| BSA         | Basic Service Area                                     |
+| BSS         | Basic Service Set                                      |
+| BSSID       | Basic Service Set Identifier                           |
+| CSMA/CA     | Carrier Sense Multiple Access with Collision Avoidance |
+| DS          | Distribution System                                    |
+| ESS         | Extended Service Set                                   |
+| GHz         | Gigahertz                                              |
+| Hz          | Hertz                                                  |
+| IBSS        | Independent Basic Service Set                          |
+| kHz         | Kilohertz                                              |
+| MBSS        | Mesh Basic Service Set                                 |
+| MHz         | Megahertz                                              |
+| SSID        | Service Set Identifier                                 |
+| THz         | Terahertz                                              |
+| WGB         | Workgroup Bridge                                       |
+
 
 ## Common Questions
 
