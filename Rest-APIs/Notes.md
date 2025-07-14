@@ -1,64 +1,95 @@
-- REST APIs must be stateless
-- In REST API Basic authentication, credentials are encoded in Base64.
+# REST API & HTTP Essentials 
 
-- Q: What does CRUD stand for?
-Cread, Read, Update, Delete
+## General REST Facts
 
-- CRUD Delete = HTTP DELETE
-- CRUD Read = HTTP GET
-- CRUD Create = HTTP POST
-- CRUD Update = HTTP PUT, PATCH
+- REST APIs must be stateless  
+- In REST API Basic authentication, credentials are encoded in Base64  
+- API key authentication uses a static (non-expiring) key issued by the API provider  
 
+## CRUD and HTTP Methods
 
-- HTTP Response class 1xx = Informational
-- HTTP Response class 2xx = Successful
-- HTTP Response class 3xx = Redirection
-- HTTP Response class 4xx = Client Error
-- HTTP Response class 5xx = Server Error
+**Q: What does CRUD stand for?**  
+- Create, Read, Update, Delete  
 
-- HTTP Response code 102 = Processing
-- HTTP Response code 200 = OK
-- HTTP Response code 201 = Created
-- HTTP Response code 301 = Moved Permanently
-- HTTP Response code 401 = Unauthorized
-- HTTP Response code 404 = Not Found
-- HTTP Response code 500 = Internal Server Error
+| CRUD Operation | HTTP Method      |
+|----------------|------------------|
+| Create         | POST             |
+| Read           | GET              |
+| Update         | PUT, PATCH       |
+| Delete         | DELETE           |
 
-- Q: What does URI stand for?
-- Uniform Resource Identifier
-- Q: In API key authentication, in which part of the message should the client specify the key?
-- The HTTP Authorization header (recommended). *Other options: URL, cookie
-- Q: In REST API Basic authentication, in which part of the message are the credentials included?
-- In the HTTP Authorization header
-- Q: In REST API Bearer authentication, are the bearer tokens valid indefinitely?
-- No; they expire after a set period of time
-- Q: In REST API Bearer authentication, in which part of the message are the credentials included?
-- In the HTTP Authorization header
-- Q: Is Base64 encoding secure?
-- No. Encoding is easily reversible; it is not encryption.
+## HTTP Response Classes
 
-- OAuth 2.0: A refresh token can be used to renew access tokens without user reauthentication.
-- REST API OAuth2.0 authentication provides access delegation.
-- REST API Bearer authentication uses a token (also called a bearer token) for authentication.
+| Class Code | Meaning         |
+|------------|-----------------|
+| 1xx        | Informational   |
+| 2xx        | Successful      |
+| 3xx        | Redirection     |
+| 4xx        | Client Error    |
+| 5xx        | Server Error    |
 
-- What are the four entities in OAuth 2.0?
-- 1: Resource owner
-- 2: Client app
-- 3: Auth server
-- 4: Resource server
+## Common HTTP Response Codes
 
-- Q: Which form of REST API authentication uses a username/password combination?
-- Basic authentication
+| Code | Meaning                 |
+|------|-------------------------|
+| 102  | Processing              |
+| 200  | OK                      |
+| 201  | Created                 |
+| 301  | Moved Permanently       |
+| 401  | Unauthorized            |
+| 404  | Not Found               |
+| 500  | Internal Server Error   |
 
-- Q: Analyze the following URL: https://sandboxdnac.cisco.com/dna/intent/api/v1/network-device
+## Authentication Methods in REST APIs
 
-- 1: Which part of the following URI is the authority?
-- sandboxdnac.cisco.com
+| Method          | Description                                                                 |
+|------------------|------------------------------------------------------------------------------|
+| **Basic Auth**    | Uses a username/password combo encoded in Base64                           |
+| **Bearer Auth**   | Uses a bearer token for authentication                                      |
+| **API Key Auth**  | Uses a static, provider-issued key                                          |
+| **OAuth 2.0**     | Uses tokens, supports access delegation and refresh tokens                 |
 
-- 2: Which part of the following URI is the path?
-- /dna/intent/api/v1/network-device
+### Q&A: Authentication Details
 
-- 3: Which part of the following URI is the scheme?
-- https
+- **Q: Which form of REST API authentication uses a username/password combination?**  
+  - Basic authentication  
 
-- API key authentication uses a static (non-expiring) key issued by the API provider.
+- **Q: In REST API Basic authentication, in which part of the message are the credentials included?**  
+  - In the HTTP Authorization header  
+
+- **Q: In REST API Bearer authentication, are the bearer tokens valid indefinitely?**  
+  - No; they expire after a set period of time  
+
+- **Q: In REST API Bearer authentication, in which part of the message are the credentials included?**  
+  - In the HTTP Authorization header  
+
+- **Q: Is Base64 encoding secure?**  
+  - No. Encoding is easily reversible; it is not encryption.  
+
+- **Q: In API key authentication, in which part of the message should the client specify the key?**  
+  - The HTTP Authorization header (recommended)  
+  - *Other options: URL, cookie*  
+
+## OAuth 2.0
+
+- OAuth 2.0: A refresh token can be used to renew access tokens without user reauthentication  
+- REST API OAuth2.0 authentication provides access delegation  
+- REST API Bearer authentication uses a token (also called a bearer token) for authentication  
+
+### Q: What are the four entities in OAuth 2.0?
+1. Resource owner  
+2. Client app  
+3. Auth server  
+4. Resource server  
+
+## URI Anatomy (REST API Context)
+
+**Q: Analyze the following URL:**  
+`https://sandboxdnac.cisco.com/dna/intent/api/v1/network-device`
+
+| Component | Value                                 |
+|-----------|----------------------------------------|
+| Scheme    | `https`                                |
+| Authority | `sandboxdnac.cisco.com`                |
+| Path      | `/dna/intent/api/v1/network-device`    |
+
