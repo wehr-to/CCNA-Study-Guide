@@ -1,5 +1,3 @@
-# OSPF
-
 # OSPF Key Concepts
 
 ## General OSPF Concepts
