@@ -29,7 +29,7 @@ This blocks one of the most common Wi-Fi attack vectors.
 - **w = wall** > Builds a wall around management frames (protection)  
 - **k = know** > Helps devices "know" nearby APs  
 - **r = run** > Helps clients run (roam) fast between APs  
-- **v = vote** > APs "vote" and suggest where a client should roam
+- **v = vote** > APs "vote" and suggest where a client should roam / POWER SAVINGS TOO
 
 ## 802.11 Message Types
 
