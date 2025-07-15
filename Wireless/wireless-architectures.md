@@ -12,7 +12,7 @@ Cisco exam may call it: **Management Frame Protection (MFP)**
 
 ## Management Frame Vulnerabilities
 
-By default, management frames (like deauthentication, disassociation, beacon frames) are unencrypted — meaning attackers can:
+By default, management frames (like deauthentication, disassociation, beacon frames) are unencrypted, meaning attackers can:
 - Spoof fake deauth frames
 - Kick users off a network
 - Set up evil twin APs
