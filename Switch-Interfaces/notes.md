@@ -60,5 +60,5 @@
 
 | **Mode**       | **Can Send & Receive Simultaneously?** | **Used With**         | **Notes**                                  |
 |----------------|-----------------------------------------|------------------------|---------------------------------------------|
-| Half Duplex    |  No — one direction at a time         | Hubs or legacy links   | Uses CSMA/CD to manage collisions           |
-| Full Duplex    |  Yes — both directions at once        | Switches               | No collisions can happen                    |
+| Half Duplex    |  No, one direction at a time         | Hubs or legacy links   | Uses CSMA/CD to manage collisions           |
+| Full Duplex    |  Yes, both directions at once        | Switches               | No collisions can happen                    |
