@@ -1,4 +1,4 @@
-# CCNA-Study-Guide
+# CCNA Study Guide
 
 - My personal study guide to prepare for the CCNA exam and also learn about cisco networking
 
