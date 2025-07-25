@@ -20,7 +20,7 @@
   - Useful for **controlling what internal traffic leaves** a network.
 
 ## Example
-
+~~~
 ```bash
 # Apply ACL 100 inbound on GigabitEthernet0/1
 interface GigabitEthernet0/1
@@ -29,7 +29,7 @@ interface GigabitEthernet0/1
 # Apply ACL 101 outbound on GigabitEthernet0/2
 interface GigabitEthernet0/2
  ip access-group 101 out
-
+~~~
 
 ### Core Concepts
 - **How many ACLs can be applied to a single interface?**  
