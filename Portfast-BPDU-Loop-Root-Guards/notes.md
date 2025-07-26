@@ -1,7 +1,5 @@
 # STP Protection Features: PortFast, BPDU Guard, BPDU Filter, Root Guard, Loop Guard
 
----
-
 ## BPDU Guard & BPDU Filter
 
 - **BPDU Guard** err-disables a switch port if it receives an STP BPDU.
@@ -21,16 +19,12 @@
 | BPDU Guard enabled by default (global config) is active on:              | All PortFast-enabled ports                                             |
 | Feature that can auto-reenable err-disabled ports                        | ErrDisable Recovery                                                    |
 
----
-
 ## PortFast
 
 - A **PortFast**-enabled port immediately enters the **Forwarding** state upon link-up.
 - Configuring PortFast globally enables it on **all access ports**.
 - PortFast allows skipping **Listening** and **Learning** STP states.
 - **Never enable PortFast** on switch-to-switch links.
-
----
 
 ## Root Guard
 
@@ -45,8 +39,6 @@
 |---------------------------|----------------------------------|
 | `BKN`                     | Broken (e.g., disabled by Root Guard) |
 | `ROOT_Inc`                | Root Inconsistent               |
-
----
 
 ## Loop Guard
 
