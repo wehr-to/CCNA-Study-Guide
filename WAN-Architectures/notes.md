@@ -27,8 +27,6 @@
 - In Layer 2 MPLS VPNs, CE routers form routing protocol peerings with each other.
 - In Layer 2 MPLS VPNs, the entire service provider network is transparent to the customer.
 
----
-
 ## Q&A
 
 **Q: Does GRE support broadcast and multicast traffic?**  
