@@ -19,8 +19,6 @@ When a switch receives a unicast frame but doesn't know the destination MAC addr
 **Q: A value of 1500 or less in the Type/Length field indicates Length.**  
 - 1500 / OFTEN USED IN ETHERNET 802.3 FRAMES
 
----
-
 ## MAC Addresses
 
 **Q: What does MAC stand for?**  
@@ -58,14 +56,12 @@ When a switch receives a unicast frame but doesn't know the destination MAC addr
 
 **ARP (Address Resolution Protocol):**  
 - ARP Request: Sent as a broadcast (FFFF.FFFF.FFFF) to all devices in the subnet to ask “Who has this IP address?”  
-- ARP Reply: Sent as a unicast to the requester — “I have that IP, here is my MAC address.”  
+- ARP Reply: Sent as a unicast to the requester “I have that IP, here is my MAC address.”  
 - This behavior is crucial for understanding how devices learn each other’s MAC addresses dynamically on a LAN.
 
 **Q: What two messages are used in ping?**  
 1. ICMP Echo Request  
 2. ICMP Echo Reply
-
----
 
 ## Ethernet Headers & Trailers
 
@@ -108,8 +104,6 @@ GOT Acronym for the order: **People Should Defend Strong Thrones**
 **Q: Which field of an Ethernet frame does a switch use to learn and populate its MAC address table?**  
 - Source MAC Address
 
----
-
 ### Ethernet Frame Properties
 
 | Question                                                  | Answer     |
@@ -120,8 +114,6 @@ GOT Acronym for the order: **People Should Defend Strong Thrones**
 | What is the size of the Ethernet header + trailer?        | 18 Bytes   |
 | (no Preamble + SFD)                                       |            |
 
----
-
 ## Example Problem: Convert 197 to Hex
 
 1. 197 / 16 = 12 with a remainder of 5  
@@ -129,13 +121,11 @@ GOT Acronym for the order: **People Should Defend Strong Thrones**
 Now map remainder 12 to hex → **C**
 
 Your remainders are:
-- 12 → C  
-- 5 → 5  
+- 12 > C  
+- 5 > 5  
 - Reverse the remainders: 197 = **C5**
 
 _(With Decimal to Hex, you divide by 16 repeatedly)_
-
----
 
 ### Number System Conversion Table
 
@@ -144,8 +134,6 @@ _(With Decimal to Hex, you divide by 16 repeatedly)_
 | Decimal to Hex         | Divide by 16 repeatedly    |
 | Decimal to Binary      | Divide by 2 repeatedly     |
 | Decimal to Octal       | Divide by 8 repeatedly     |
-
----
 
 ### Ethernet Type Codes
 
