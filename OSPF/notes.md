@@ -83,8 +83,6 @@
 The **Router ID** is a 32-bit identifier used by routing protocols (e.g., OSPF, EIGRP, BGP) to uniquely identify a router within a routing domain.  
 It looks like an IPv4 address but is **not required to be reachable**.
 
----
-
 ## Router ID Selection Order
 
 ### Case 1: Router ID is Configured Manually
