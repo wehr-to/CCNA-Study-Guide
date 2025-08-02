@@ -1,15 +1,11 @@
 # IPv6 Notes
 
----
-
 ## Local-Only IPv6 Address Types
 
 If you see a question like:  
 "Which IPv6 address types are not forwarded beyond the local link?"  
 Answer:  
 Link-local, loopback, unspecified
-
----
 
 ## Unique Local IPv6 Address Structure
 
@@ -19,8 +15,6 @@ Four sections of an IPv6 'unique local' address:
 - Subnet identifier
 - Interface identifier
 
----
-
 ## EUI-64 Identifier Generation
 
 3 steps to convert a MAC address into an EUI-64 identifier:
@@ -28,16 +22,12 @@ Four sections of an IPv6 'unique local' address:
 2. Insert FFFE in the middle  
 3. Invert the 7th bit  
 
----
-
 ## Address Communication Types
 
 - Broadcast addresses provide one-to-all communication  
 - Multicast addresses provide one-to-many communication  
 - Unicast addresses provide one-to-one communication  
 - Anycast addresses provide one-to-one-of-many communication  
-
----
 
 ## IPv6 Address Facts
 
@@ -48,14 +38,10 @@ Four sections of an IPv6 'unique local' address:
 - Typically, IPv6 subnets use a /64 prefix length.  
 - IPv6 unique local addresses begin with FD.  
 
----
-
 ## MAC Address U/L Bit
 
 - If the U/L bit of a MAC address is 0, it is a UAA.  
 - If the U/L bit of a MAC address is 1, it is a LAA.  
-
----
 
 ## IPv6 Address Categories
 
@@ -64,13 +50,9 @@ Four sections of an IPv6 'unique local' address:
 - IPv6 link-local addresses begin with FE80  
 - The IPv6 global unicast range was originally defined as 2000::/3 (now it includes all addresses which aren't reserved for other purposes)  
 
----
-
 ## Duplicate Address Detection (DAD)
 
 - Duplicate Address Detection (DAD) allows hosts to check if other devices on the local link are using the same IPv6 address.  
-
----
 
 ## Static Routes
 
@@ -80,16 +62,12 @@ Four sections of an IPv6 'unique local' address:
 - In IPv6, you can't use directly attached static routes if the interface is an Ethernet interface. (the command will work but the route will not)  
 - To use an IPv6 link-local address as a next hop, you must configure a fully specified static route.  
 
----
-
 ## IPv6 Global Unicast Structure
 
 **What are the three sections of an IPv6 global unicast address?**  
 - Global routing prefix  
 - Subnet identifier  
 - Interface identifier  
-
----
 
 ## IPv6 Q&A
 
@@ -218,8 +196,6 @@ A: NS/NA
 
 Q: Which protocol replaces ARP in IPv6?  
 A: NDP
-
----
 
 ## NDP Multicast Address Targets
 
