@@ -47,8 +47,19 @@
 ## Cisco SD-Access Switch Types
 
 **Q: What are the three switch types in Cisco SD-Access?**
-- Edge Node  
-- Border Node  
+- Edge Node = End hosts 
+- Border Node = connect to devices outside of SD access domain 
 - Control Node
 
+- New deplotment / greenfield
+- all switches are L3 and use IS IS as routing protocol
+- Edge notes (access switches) act as default gateway
 
+- Cisco trust sec (CTS) provides policy control, QOS, sec policy, etc
+- VXlan provides the data plane of SD access
+
+- DNA center (SDN controller, Network manager in a traditional network)
+- DNA center installed on Cisco UCS server hardware
+- Has a REST API which can interact with DNA center
+- SBI supports protocols such as NETCONF and RESTCONF, as well as traditional protocols like telnet, ssh, and SNMP
+- Allows engineers to specify intent of policies
