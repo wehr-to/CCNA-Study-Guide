@@ -99,3 +99,11 @@
 
 - **Q: Which uses more CPU/RAM: a VM or a container?**  
   A: VM
+
+  - Isolation: provide fault and security isolation at the hardware level, preserve performance with advanced resource controls
+  - Partitioning: Run multiple OS on one physical machine, divide system resources between VMs
+  - Encapsulation: Save the entire state of a VM to files, move and copy virtual machines as easily as moving and copying files
+  - Hardware independence: Provision or migrate any virtual amchine to any physical server
+ 
+  ## Network Interface card:
+  - 
