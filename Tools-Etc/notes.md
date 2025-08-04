@@ -18,8 +18,6 @@
 - Configuration management tools typically use a(n) **mutable infrastructure** approach.
 - Provisioning tools typically use a(n) **immutable infrastructure** approach.
 
----
-
 # Terraform
 
 ## Overview
@@ -43,8 +41,6 @@
 2. Plan  
 3. Apply
 
----
-
 # Ansible
 
 ## Overview
@@ -61,8 +57,6 @@
 - Ansible **playbook files define the actions to be taken**.
 - The Ansible server is called the **Control Node**.
 
----
-
 # Chef
 
 ## Overview
@@ -78,8 +72,6 @@
 ## Configuration
 - Chef files are written in a **proprietary language** based on **Ruby**.
 - Chef **recipe / run-list files define the actions to be taken**.
-
----
 
 # Puppet
 
