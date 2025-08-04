@@ -93,3 +93,6 @@
 | Authority | `sandboxdnac.cisco.com`                |
 | Path      | `/dna/intent/api/v1/network-device`    |
 
+- Base64 is an encoding scheme, which is a way of representing data
+- Unlike encryption, it is not secure and can easily be decoded
+- Always use HTTPS (HTTP + TLS) for security
