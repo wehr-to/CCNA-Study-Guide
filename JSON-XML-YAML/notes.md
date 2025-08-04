@@ -1,7 +1,5 @@
 # Data Serialization Formats
 
----
-
 ## YAML
 
 - YAML files start with `---` (three hyphens)
@@ -12,8 +10,6 @@
 **Q: What does YAML stand for?**  
 YAML Ain't Markup Language
 
----
-
 ## XML
 
 - XML uses the `<key>value</key>` format
@@ -21,8 +17,6 @@ YAML Ain't Markup Language
 
 **Q: What does XML stand for?**  
 Extensible Markup Language
-
----
 
 ## JSON
 
@@ -58,8 +52,6 @@ Extensible Markup Language
 
 **Q: What does JSON stand for?**  
 JavaScript Object Notation
-
----
 
 ## General
 
