@@ -17,8 +17,6 @@
 - The OS running in a VM is called the **Guest OS**
 - Examples: VMware Workstation, VirtualBox
 
----
-
 ## Cloud Computing Models (NIST)
 
 ### Three Service Models
@@ -45,20 +43,16 @@
 4. Rapid elasticity  
 5. Measured service  
 
----
-
 ## Key Definitions
 
 - **VM (Virtual Machine)**: An emulation of a physical computer
 - **VMM (Virtual Machine Monitor)**: Another name for a hypervisor
 - **Cisco UCS**: Unified Computing System
 
----
-
 ## Containers
 
 - **Containers** are software packages that contain an app and all dependencies needed to run it.
-- **Containers** do **not** run their own OS — they share the host OS.
+- **Containers** do **not** run their own OS, they share the host OS.
 - A **container engine** runs on the host OS (e.g., Docker Engine).
 - A **container orchestrator** automates deployment, scaling, and management of containers.
 
@@ -66,8 +60,6 @@
 
 - **Container Engines**: Docker Engine  
 - **Orchestrators**: Docker Swarm, Kubernetes  
-
----
 
 ## Containers vs Virtual Machines
 
@@ -78,8 +70,6 @@
 | OS Overhead          | Shared OS         | Own OS per VM   |
 | Disk Usage           | Less              | More            |
 | CPU/RAM Usage        | Less              | More            |
-
----
 
 ## Q&A
 
