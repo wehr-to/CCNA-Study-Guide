@@ -96,3 +96,11 @@
 - Base64 is an encoding scheme, which is a way of representing data
 - Unlike encryption, it is not secure and can easily be decoded
 - Always use HTTPS (HTTP + TLS) for security
+
+## Bearer
+- More secure than basic auth
+- Client obtains a token by authenticating with an authorization server
+- The term bearer meaans anyone who possesses the token can use it
+- If an attacker steals the token, they can make API calls as if they were the legitimate user
+- To mitigate, tokens expire after a set period of time
+- 
