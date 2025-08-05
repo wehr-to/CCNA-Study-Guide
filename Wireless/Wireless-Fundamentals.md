@@ -69,10 +69,10 @@
 
 | Type  | Meaning                                        | Example                  |
 |-------|------------------------------------------------|--------------------------|
-| BSS   | Basic Service Set — AP + clients               | Home router setup        |
-| IBSS  | Independent BSS — ad hoc (no AP)               | Laptop-to-laptop direct  |
-| ESS   | Extended Service Set — multiple APs with shared SSID | Enterprise Wi-Fi     |
-| MBSS  | Mesh BSS — APs relay through each other        | Outdoor mesh, campus wireless |
+| BSS   | Basic Service Set, AP + clients               | Home router setup        |
+| IBSS  | Independent BSS, ad hoc (no AP)               | Laptop-to-laptop direct  |
+| ESS   | Extended Service Set, multiple APs with shared SSID | Enterprise Wi-Fi     |
+| MBSS  | Mesh BSS, APs relay through each other        | Outdoor mesh, campus wireless |
 
 ## 802.11 Wireless Standards
 
