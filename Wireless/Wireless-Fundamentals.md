@@ -130,6 +130,7 @@
 - Wireless LANs are defined in IEEE 802.11.
 - Wireless networks operate in half-duplex.
 - Wireless networks use CSMA/CA to avoid collisions.
+- Wireless networks use CSMA/CD to detect and recover from collisions
 
 ## Service Set Types
 
