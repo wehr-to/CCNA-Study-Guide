@@ -58,3 +58,38 @@ JavaScript Object Notation
 **Q: Which data serialization languages are often used by REST APIs?**  
 - JSON  
 - XML  
+
+### Nested JSON array 
+
+~~~
+{
+  "name": "Security Lab",
+  "machines": [
+    {
+      "id": 1,
+      "hostname": "webserver01",
+      "ip": "192.168.1.10",
+      "services": [
+        "HTTP",
+        "HTTPS",
+        "SSH"
+      ]
+    },
+    {
+      "id": 2,
+      "hostname": "dbserver01",
+      "ip": "192.168.1.20",
+      "services": [
+        "MySQL",
+        "SSH"
+      ]
+    }
+  ]
+}
+~~~
+
+### Explanation:
+~~~
+The top-level key "machines" contains an array of objects.
+Each object has its own "services" field, which is itself an array, that’s the nested array.
+~~~
