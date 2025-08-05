@@ -10,8 +10,6 @@
 | 802.11ac   | 5                    | 6.93 Gbps            |
 | 802.11ax   | 2.4 / 5 / 6          | ~27.72 Gbps (4×802.11ac) |
 
----
-
 ## IEEE 802.11 Wi-Fi Version Names
 
 | Standard   | Common Wi-Fi Name |
