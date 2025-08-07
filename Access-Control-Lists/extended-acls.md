@@ -8,8 +8,6 @@
 | `lt <port-num>`              | Matches all ports less than the number          |
 | `range <low> <high>`         | Matches a range of ports from low to high       |
 
----
-
 # Extended Numbered ACL Ranges
 
 | Range Type         | Range     |
@@ -17,8 +15,6 @@
 | Standard ACLs      | 1–99      |
 | Extended ACLs      | 100–199   |
 | Extended ACLs (expanded) | 2000–2699 |
-
----
 
 # IP Protocol Numbers
 
