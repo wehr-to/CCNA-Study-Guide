@@ -25,3 +25,20 @@
 | View all IP ACLs on the router                             | `exec`             | `show ip access-lists`                                                        |
 
 
+# Extended ACL Commands Table
+
+| Purpose                                           | Mode                         | Command                                                                                                   |
+|---------------------------------------------------|------------------------------|------------------------------------------------------------------------------------------------------------|
+| Configure a numbered extended ACL entry           | Global Config                | `access-list <number> {permit | deny} <protocol> <source-ip> <source-wildcard> <dest-ip> <dest-wildcard>` |
+| Configure numbered extended ACL with port control | Global Config                | `access-list <number> {permit | deny} <protocol> <src-ip> <src-wildcard> eq <src-port> <dst-ip> <dst-wildcard> eq <dst-port>` |
+| Enter named extended ACL config mode              | Global Config                | `ip access-list extended <name>`                                                                          |
+| Configure named extended ACL entry (basic)        | ACL Config (`config-ext-nacl`) | `{permit | deny} <protocol> <src-ip> <src-wildcard> <dest-ip> <dest-wildcard>`                          |
+| Configure named extended ACL entry (with ports)   | ACL Config (`config-ext-nacl`) | `{permit | deny} <protocol> <src-ip> <src-wildcard> eq <src-port> <dest-ip> <dest-wildcard> eq <dst-port>` |
+| Permit or deny all IP traffic                     | ACL Config (`config-ext-nacl`) | `{permit | deny} ip any any`                                                                             |
+| Add remark to extended ACL                        | ACL Config (`config-ext-nacl`) | `remark <text>`                                                                                          |
+| Delete ACL entry by sequence number               | ACL Config (`config-ext-nacl`) | `no <sequence-number>`                                                                                   |
+| Resequence ACL entries                            | Global Config                | `ip access-list resequence <acl-name-or-number> <starting-seq> <increment>`                              |
+| Apply ACL to interface                            | Interface Config (`config-if`) | `ip access-group <acl-name-or-number> {in | out}`                                                        |
+| View ACLs applied to interface                    | Exec Mode                    | `show ip interface <interface-name>`                                                                      |
+| View all ACLs                                     | Exec Mode                    | `show access-lists`                                                                                       |
+| View only IP-based ACLs                           | Exec Mode                    | `show ip access-lists`                                                                                    |
