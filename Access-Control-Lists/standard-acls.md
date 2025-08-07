@@ -21,7 +21,6 @@
 
 ## Example
 ~~~
-```bash
 # Apply ACL 100 inbound on GigabitEthernet0/1
 interface GigabitEthernet0/1
  ip access-group 100 in
