@@ -70,6 +70,22 @@ interface GigabitEthernet0/2
 - **Q: What happens after a packet matches an ACE?**  
   A: All remaining ACEs are ignored.
 
+## Other Notes: 
+- Functions as a packet filter
+- Filters on source/destination IP and source/destination L4 Port numbers
+- configured in global config mode
+- ordered sequence of ACEs (access control entries)
+- After being created, they are applied inbound or outbound
+- Max of one ACL can be applied to a single interface per direction, it will get replaced if another is added
+- Use the wildcard mask (inverse of subnet mask) when specifying IPs in ACLs (especially standard ACLs)
+- ACL Remarks are like inline comments
+
+| Subnet Mask     | Wildcard Mask |
+| --------------- | ------------- |
+| 255.255.255.0   | 0.0.0.255     |
+| 255.255.255.128 | 0.0.0.127     |
+| 255.255.255.252 | 0.0.0.3       |
+
 ## References 
 - https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html
 
