@@ -25,19 +25,3 @@
 | View all IP ACLs on the router                             | `exec`             | `show ip access-lists`                                                        |
 
 
-# Extended ACL Commands Table
-
-| Purpose                                                 | Mode                        | Command                                                                                  |
-|---------------------------------------------------------|-----------------------------|-------------------------------------------------------------------------------------------|
-| Configure numbered extended ACL entry                   | Global Config               | `access-list <number> {permit | deny} <protocol> <src-ip wildcard> <dest-ip wildcard>`  |
-| Configure numbered extended ACL with ports              | Global Config               | `access-list <number> {permit | deny} <protocol> <src-ip wildcard> eq <src-port> <dest-ip wildcard> eq <dest-port>` |
-| Enter named extended ACL configuration mode             | Global Config               | `ip access-list extended <name>`                                                         |
-| Configure named extended ACL entry                      | Named ACL Config (`config-ext-nacl`) | `{permit | deny} <protocol> <src-ip wildcard> [operator <src-port>] <dest-ip wildcard> [operator <dst-port>]` |
-| Permit or deny all IP traffic                           | Any ACL Config Mode         | `{permit | deny} ip any any`                                                             |
-| Add remark to a named extended ACL                      | Named ACL Config            | `remark <text>`                                                                          |
-| Delete an entry by sequence number                      | Named ACL Config            | `no <sequence-number>`                                                                   |
-| Resequence ACL entries                                  | Global Config               | `ip access-list resequence <acl-name-or-number> <start> <increment>`                    |
-| Apply ACL to an interface                               | Interface Config (`config-if`) | `ip access-group <acl-name-or-number> {in | out}`                                      |
-| View ACLs applied to interface                          | Exec Mode                   | `show ip interface <interface-id>`                                                       |
-| View all ACLs on the device                             | Exec Mode                   | `show access-lists`                                                                      |
-| View all IP ACLs specifically                           | Exec Mode                   | `show ip access-lists`                                                                   |
