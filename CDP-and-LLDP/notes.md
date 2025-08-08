@@ -23,6 +23,7 @@
 - **LLDP is unidirectional per function**: devices independently send (`lldp transmit`) and receive (`lldp receive`) advertisements.
 - **Transmit and receive are configured separately** per interface in LLDP.
 - **A device can run both CDP and LLDP simultaneously.**
+- When a device receives an LLDP message, it processes and discards the message, it does NOT forward it to other devices
 
 ## Protocol Overview
 
