@@ -14,8 +14,6 @@
 | Enable LLDP receive on interface | interface config | `lldp receive` |
 | Enable LLDP transmit on interface | interface config | `lldp transmit` |
 
----
-
 ### CDP Show Commands
 
 | Purpose | Exec Command |
@@ -26,8 +24,6 @@
 | Show CDP neighbor table | `show cdp neighbors` |
 | Show interfaces CDP is enabled on | `show cdp interface` |
 | Show CDP packets sent/received | `show cdp traffic` |
-
----
 
 ### LLDP Show Commands
 
