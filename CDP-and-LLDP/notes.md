@@ -24,8 +24,6 @@
 - **Transmit and receive are configured separately** per interface in LLDP.
 - **A device can run both CDP and LLDP simultaneously.**
 
----
-
 ## Protocol Overview
 
 | Feature                         | CDP                            | LLDP                                 |
@@ -35,8 +33,6 @@
 | Default State on Cisco Devices  | Enabled                        | Disabled                              |
 | Supports VTP Info Sharing       | Yes                            | No                                    |
 | Destination MAC Address         | `0100.0CCC.CCCC`               | `0180.C200.000E`                      |
-
----
 
 ## Quiz Q&A
 
@@ -51,8 +47,6 @@ A: LLDP
 
 **Q: Which Layer 2 discovery protocol is Cisco proprietary?**  
 A: CDP
-
----
 
 ## CDP/LLDP are trying to discover:
 
