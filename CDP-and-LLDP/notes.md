@@ -69,4 +69,5 @@ A: CDP
 | **IP Address of Neighbor**     | Management IP for reachability and troubleshooting                          |
 | **Scope**                      | Only discovers **directly connected Layer 2 neighbors** (not Layer 3 routes)|
 
+- Side note when configuring be aware of the differences of the Port ID and the local interface
 
