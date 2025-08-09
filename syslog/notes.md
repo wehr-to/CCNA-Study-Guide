@@ -8,8 +8,6 @@
 1. Console Line  
 2. Buffer  
 
----
-
 ## Syslog Message Fields
 
 | Field         | Description                                                  |
@@ -20,8 +18,6 @@
 | severity      | Indicates how serious the logged event is                    |
 | time stamp    | Indicates the time the message was generated                 |
 | facility      | Indicates which process on the device generated the message  |
-
----
 
 ## Syslog Severity Levels
 
