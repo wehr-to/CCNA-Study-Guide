@@ -14,8 +14,6 @@ When the HSRP standby router switches to the active role, it will send gratuitou
 HSRPv1 multicast IPv4 address: 224.0.0.2  
 HSRPv2 multicast IPv4 address: 224.0.0.102
 
----
-
 ## FHRP Questions & Answers
 
 **Q: Is GLBP Cisco proprietary?**  
@@ -54,14 +52,10 @@ The virtual MAC address
 **Q: Which FHRP load balances among multiple routers within a single subnet?**  
 GLBP
 
----
-
 ## HSRP Active Router Election Order
 
 1. Highest priority  
 2. Highest IP address
-
----
 
 ## Virtual MAC Address Formats
 
