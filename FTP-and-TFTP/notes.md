@@ -11,8 +11,6 @@
 - The network file system type represents external file systems, for example FTP/TFTP servers.  
 - The opaque file system type represents logical systems used for internal functions.  
 
----
-
 ## FTP and TFTP Q&A
 
 **Q: Does FTP use authentication?**  
