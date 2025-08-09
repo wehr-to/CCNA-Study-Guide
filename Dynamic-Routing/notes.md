@@ -1,7 +1,5 @@
 # Dynamic Routing Protocols & Route Selection
 
----
-
 ## Core Concepts
 
 - **EGPs** are used to share routes between different autonomous systems (AS).
@@ -15,8 +13,6 @@
 - **Distance Vector** routing protocols send the following information to their connected neighbors:
   - Their known destination networks
   - Their metric to reach their known destination networks
-
----
 
 ## Protocol Classifications
 
@@ -35,8 +31,6 @@
 ### Path Vector Protocol
 - BGP
 
----
-
 ## Route Selection Logic
 
 - **Q:** Does a router prefer a lower or higher AD when selecting routes?  
@@ -54,8 +48,6 @@
 - **Q:** R1 learns two routes to the same destination, via the same routing protocol, and both routes have the same metric. Which will be added to the routing table?  
   **A:** Both (traffic will be load-balanced)
 
----
-
 ## Route Example Breakdown
 
 - **Q:** What is the AD value of this route?  
@@ -65,8 +57,6 @@
 - **Q:** What is the metric value of this route?  
   `O 192.168.4.0/24 [110/3] via 10.0.12.2`  
   **A:** 3
-
----
 
 ## Definitions & Acronyms
 
@@ -81,8 +71,6 @@
 | EIGRP | Enhanced Interior Gateway Routing Protocol |
 | IS-IS | Intermediate System to Intermediate System |
 | Floating Static Route | A static route with higher AD than a dynamic route |
-
----
 
 ## Protocol Behavior
 
@@ -109,8 +97,6 @@
 
 - **Q:** What is the single type of EGP?  
   **A:** Path Vector
-
----
 
 ## Quick Review
 
